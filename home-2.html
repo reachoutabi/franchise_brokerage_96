@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franchise Opportunities & Development | Vanguard Franchise Advisors</title>
+  <meta name="description" content="Discover vetted national franchise opportunities, multi-unit resale packages, and certified franchise development advisory. Explore top brands across food, fitness, education, and services.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            emerald: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            gold: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="bg-[#070B14] text-slate-100 antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================================
+       STICKY NAVBAR
+       ======================================================================== -->
+  <header class="site-header flex items-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl w-full mx-auto flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-[#C79718] rounded-lg">
+        <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg font-extrabold tracking-tight text-white flex items-center gap-1 leading-tight">
+            VANGUARD <span class="text-[#C79718]">BROKERS</span>
+          </span>
+          <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+            Business Brokerage & M&A Advisory
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Section 15.2: About comes AFTER Sell) -->
+      <nav class="desktop-nav hidden lg:flex items-center gap-6 xl:gap-8">
+        <div class="relative nav-dropdown-wrapper group">
+          <a href="home-2.html" class="nav-link nav-dropdown-trigger flex items-center gap-1.5 active" id="home-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span class="nav-link-text">Home</span>
+            <i class="bi bi-chevron-down dropdown-chevron text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+          </a>
+          <div class="nav-dropdown-menu absolute top-full inset-inline-start-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-[1050]">
+            <div class="nav-dropdown-card">
+              <a href="index.html" class="nav-dropdown-item">
+                <span>Business Brokerage</span>
+              </a>
+              <a href="home-2.html" class="nav-dropdown-item active">
+                <span>Franchise</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="buy-a-business.html" class="nav-link">Buy</a>
+        <a href="sell-your-business.html" class="nav-link">Sell</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action Controls & CTAs -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <!-- Saved Favorites Trigger (Hidden on mobile when hamburger appears) -->
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal relative hidden lg:inline-flex" title="Saved Businesses" aria-label="View saved businesses">
+          <i class="bi bi-heart"></i>
+          <span class="saved-counter-badge absolute -top-1.5 -inset-inline-end-1.5 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-bold flex items-center justify-center hidden">0</span>
+        </button>
+
+        <!-- Theme Toggle (Hidden on mobile when hamburger appears) -->
+        <button type="button" class="btn-icon-toggle theme-toggle-btn hidden lg:inline-flex" title="Toggle Dark/Light Mode" aria-label="Toggle dark/light theme">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+
+        <!-- RTL Toggle (Hidden on mobile when hamburger appears) -->
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn hidden lg:inline-flex" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+
+        <!-- Primary CTA Button (Hidden on mobile when hamburger appears) -->
+        <button type="button" class="btn btn-primary btn-sm sm:btn-md btn-open-consultation-modal hidden lg:inline-flex">
+          Free Consultation <i class="bi bi-calendar-event"></i>
+        </button>
+
+        <!-- Mobile Hamburger Toggle (Appears ONLY when navbar list is hidden) -->
+        <button type="button" id="btn-mobile-menu-toggle" class="hamburger-btn btn-icon-toggle lg:hidden" aria-label="Open navigation menu">
+          <i class="bi bi-list text-2xl"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Slide-out Menu -->
+  <div id="mobile-nav-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[2000] hidden lg:hidden"></div>
+  <aside id="mobile-nav-drawer" class="lg:hidden fixed top-0 bottom-0 w-[85%] max-w-sm bg-[#0D1527] border-e border-white/10 z-[2010] p-6 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-extrabold text-white tracking-tight leading-tight">VANGUARD <span class="text-[#C79718]">BROKERS</span></span>
+            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">Business Brokerage & M&A Advisory</span>
+          </div>
+        </div>
+        <button type="button" id="btn-close-mobile-menu" class="text-slate-400 hover:text-white text-2xl p-1" aria-label="Close menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-3">
+        <!-- Mobile Home Dropdown Group -->
+        <div class="border-b border-white/5 pb-2">
+          <button type="button" class="mobile-dropdown-toggle w-full text-lg font-bold flex items-center justify-between text-emerald-400 focus:outline-none py-2" aria-expanded="true" data-target="mobile-home-submenu">
+            <span class="flex items-center gap-2">Home</span>
+            <i class="bi bi-chevron-down text-sm transition-transform duration-200 mobile-submenu-chevron rotate-180"></i>
+          </button>
+          <div id="mobile-home-submenu" class="ps-3 space-y-1 mt-1">
+            <a href="index.html" class="flex items-center gap-2.5 py-2 text-sm font-medium text-slate-300 hover:text-white">
+              <span>Business Brokerage</span>
+            </a>
+            <a href="home-2.html" class="flex items-center gap-2.5 py-2 text-sm font-bold text-amber-400">
+              <span>Franchise</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="buy-a-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Buy</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="sell-your-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Sell</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="about.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>About</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="contact.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Contact</span> <i class="bi bi-arrow-right"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-white/10 space-y-3">
+      <button type="button" class="btn btn-primary w-full btn-open-consultation-modal">
+        Book Free Consultation <i class="bi bi-calendar-event"></i>
+      </button>
+      <div class="flex items-center justify-around pt-2">
+        <button type="button" class="btn-icon-toggle theme-toggle-btn" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal" title="Saved Businesses">
+          <i class="bi bi-heart"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HERO SECTION: FRANCHISE OPPORTUNITY & DEVELOPMENT PORTAL
+       ======================================================================== -->
+  <section class="page-hero relative min-h-[640px] flex items-center py-16 lg:py-24 overflow-hidden border-b border-white/5">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="page-hero-scrim"></div>
+
+    <div class="page-hero-content max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Franchise Opportunity Messaging -->
+        <div class="lg:col-span-7 space-y-6 text-start">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            National Franchise Opportunity & Development Desk
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl xl:text-6xl font-black text-white tracking-tight leading-[1.15]">
+            Acquire a Proven Concept. Scale Your <span class="text-gold-500">Franchise Empire.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-xl font-normal leading-relaxed">
+            Connect with vetted high-margin franchise brands, prime exclusive territorial rights, and cash-flowing multi-unit resales. We provide certified Franchise Disclosure (FDD) financial recasting and SBA 7(a) funding assistance.
+          </p>
+
+          <!-- Live Deal Flow Ticker Banner -->
+          <div class="p-3.5 sm:p-4 rounded-xl bg-[#0D1527]/90 border border-white/10 max-w-xl">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+              <div class="flex items-start sm:items-center gap-3 min-w-0">
+                <div class="w-9 h-9 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                  <i class="bi bi-award text-lg"></i>
+                </div>
+                <div class="min-w-0">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="font-bold text-white text-sm sm:text-xs">Franchise Inventory Status</span>
+                    <span class="sm:hidden px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 font-mono text-[10px] font-bold shrink-0">
+                      100% Pre-Screened
+                    </span>
+                  </div>
+                  <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
+                    42 Vetted Brands Available • 18 Multi-Unit Resales
+                  </p>
+                </div>
+              </div>
+              <span class="hidden sm:inline-flex px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-300 font-mono text-[11px] font-bold shrink-0">
+                100% Pre-Screened
+              </span>
+            </div>
+          </div>
+
+          <!-- Direct Call to Actions -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="#franchise-spotlight-section" class="btn btn-primary btn-lg shadow-lg shadow-emerald-500/25">
+              Explore Franchise Concepts <i class="bi bi-arrow-down-circle"></i>
+            </a>
+            <button type="button" class="btn btn-outline btn-lg btn-open-consultation-modal">
+              Free Franchise Discovery Call <i class="bi bi-calendar-event"></i>
+            </button>
+          </div>
+
+          <!-- Trust Badges Bar -->
+          <div class="pt-4 border-t border-white/10 flex flex-wrap items-center gap-6 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <i class="bi bi-patch-check-fill text-emerald-400 text-sm"></i>
+              <span>IFA & IBBA Certified Advisors</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="bi bi-shield-lock-fill text-emerald-400 text-sm"></i>
+              <span>Zero Upfront Advisory Fees</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="bi bi-cash-stack text-gold-500 text-sm"></i>
+              <span>SBA 7(a) Pre-Qualified Brands</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Quick Franchise Finder Card -->
+        <div class="lg:col-span-5">
+          <div class="relative bg-gradient-to-b from-[#131E35] to-[#0A1120] rounded-2xl border border-emerald-500/30 p-5 sm:p-7 shadow-2xl backdrop-blur-xl">
+            <!-- Header Badge -->
+            <div class="flex items-center justify-between pb-3.5 border-b border-white/10 mb-4 sm:mb-5">
+              <div class="flex items-center gap-2">
+                <span class="relative flex h-2.5 w-2.5 shrink-0">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 whitespace-nowrap">Franchise Matcher</span>
+              </div>
+              <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-white/5 border border-white/10 text-slate-300 shrink-0 whitespace-nowrap">
+                DESK #FR-2026
+              </span>
+            </div>
+
+            <!-- Title & Info -->
+            <div class="mb-4 sm:mb-5">
+              <h2 class="text-xl sm:text-2xl font-bold text-white leading-snug">
+                Find Your Ideal Franchise Concept
+              </h2>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                Filter by verified liquid capital requirements and industry fit.
+              </p>
+            </div>
+
+            <form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('franchise-spotlight-section').scrollIntoView({behavior: 'smooth'});">
+              <div>
+                <label for="franchise-finder-capital" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5 flex items-center gap-1.5">
+                  <i class="bi bi-wallet2 text-emerald-400"></i> Available Liquid Capital
+                </label>
+                <select id="franchise-finder-capital" class="form-select text-sm w-full">
+                  <option value="all">Any Capital Level ($50K - $1M+)</option>
+                  <option value="50000">$50,000 - $100,000 (Low Overhead / Service)</option>
+                  <option value="100000">$100,000 - $250,000 (Fitness & Education)</option>
+                  <option value="250000">$250,000 - $500,000 (Artisan Food & QSR)</option>
+                  <option value="500000">$500,000+ (Multi-Unit Master Territories)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="franchise-finder-industry" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5 flex items-center gap-1.5">
+                  <i class="bi bi-tags text-emerald-400"></i> Franchise Sector Focus
+                </label>
+                <select id="franchise-finder-industry" class="form-select text-sm w-full">
+                  <option value="all">All Franchise Sectors</option>
+                  <option value="Food & Beverage">Specialty Coffee, QSR & Food Service</option>
+                  <option value="Health & Fitness">Boutique Fitness, Wellness & MedSpas</option>
+                  <option value="Education">Children's STEM, Robotics & Tutoring</option>
+                  <option value="Automotive">Automotive Detailing & Fleet Maintenance</option>
+                  <option value="Services">B2B Commercial Facility Services</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="franchise-finder-territory" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5 flex items-center gap-1.5">
+                  <i class="bi bi-geo-alt text-emerald-400"></i> Desired Territory / State
+                </label>
+                <input type="text" id="franchise-finder-territory" data-type="location" pattern="^[A-Za-z\s,.'-]*$" title="Desired Territory / State (letters only, e.g. Texas, Florida)" class="form-input text-sm w-full" placeholder="e.g. Texas, Florida, or Nationwide">
+              </div>
+
+              <div class="pt-2">
+                <button type="submit" class="btn btn-primary w-full h-[46px] justify-center items-center text-center font-semibold">
+                  Explore Matching Franchises <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+
+            <p class="text-[11px] text-center text-slate-400 mt-3.5 leading-relaxed max-w-xs mx-auto">
+              Confidential consultation provided at zero fee to prospective franchisees.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       KEY FRANCHISE STATS METRIC RIBBON
+       ======================================================================== -->
+  <section class="py-10 bg-[#0A1120] border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 text-center">
+        <div class="p-3 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors flex flex-col justify-center">
+          <div class="stat-counter text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#C79718] font-mono mb-1 whitespace-nowrap" data-target="150" data-suffix="+">150+</div>
+          <div class="text-[11px] sm:text-xs uppercase font-bold tracking-wider text-slate-400">Vetted Franchise Brands</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors flex flex-col justify-center">
+          <div class="stat-counter text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#C79718] font-mono mb-1 whitespace-nowrap tracking-tight" data-target="140" data-prefix="$" data-suffix="K - $2M">$140K - $2M</div>
+          <div class="text-[11px] sm:text-xs uppercase font-bold tracking-wider text-slate-400">Capital Investment Tiers</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors flex flex-col justify-center">
+          <div class="stat-counter text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#C79718] font-mono mb-1 whitespace-nowrap" data-target="98.4" data-suffix="%" data-decimals="1">98.4%</div>
+          <div class="text-[11px] sm:text-xs uppercase font-bold tracking-wider text-slate-400">SBA 7(a) Funding Success</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors flex flex-col justify-center">
+          <div class="stat-counter text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#C79718] font-mono mb-1 whitespace-nowrap" data-target="50" data-suffix=" States">50 States</div>
+          <div class="text-[11px] sm:text-xs uppercase font-bold tracking-wider text-slate-400">Exclusive Territories</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FEATURED NATIONAL FRANCHISE CONCEPTS (id="franchise-spotlight-grid")
+       ======================================================================== -->
+  <section id="franchise-spotlight-section" class="pb-20 pt-0 bg-[#0D1527] border-y border-white/5">
+    <!-- Full-Width White Section Header Band -->
+    <div class="section-header-band">
+      <div class="header-band-inner">
+        <span class="eyebrow-text">Franchise Opportunity Showcase</span>
+        <h2 class="section-title">Featured National Franchise Concepts</h2>
+        <p class="section-desc">Proven business systems with comprehensive franchisor training, supply chain integration, proprietary software, and high multi-unit growth ceilings.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Uniform Containers Grid rendered via listings.js & main.js -->
+      <div id="franchise-spotlight-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        <!-- Rendered dynamically by main.js with uniform card sizing and text strictly below images -->
+      </div>
+
+      <!-- Common Franchise Enquiry Action Button below four divs -->
+      <div class="mt-10 text-center flex flex-col items-center justify-center px-4">
+        <a href="contact.html?interest=Franchise%20Consulting" class="btn btn-primary btn-lg w-full max-w-md sm:w-auto px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold shadow-xl shadow-amber-500/10 inline-flex items-center justify-center gap-2.5 sm:gap-3 hover:scale-[1.02] transition-transform text-center whitespace-normal">
+          <i class="bi bi-briefcase-fill text-base sm:text-lg shrink-0"></i>
+          <span>Request Common Franchise Enquiry</span>
+          <i class="bi bi-arrow-right text-base sm:text-lg shrink-0"></i>
+        </a>
+        <p class="text-xs text-slate-400 mt-2.5 max-w-md mx-auto">
+          Inquire across all featured franchise concepts or request multi-unit territory availability and FDD disclosure packets.
+        </p>
+      </div>
+
+      <!-- Bottom Advisory Action -->
+      <div class="mt-12 p-6 rounded-2xl bg-white/[0.02] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-start">
+        <div class="space-y-1">
+          <h4 class="text-white font-bold text-base">Looking for a Specific Brand or Custom Territory?</h4>
+          <p class="text-xs text-slate-400">We work directly with over 150 franchise franchisors across North America. Our advisory service is 100% free to prospective franchisees.</p>
+        </div>
+        <button type="button" class="btn btn-primary btn-md shrink-0 btn-open-consultation-modal">
+          Schedule Territory Assessment <i class="bi bi-geo-alt"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FRANCHISE INVESTMENT TIERS COMPARISON
+       ======================================================================== -->
+  <section class="pb-20 pt-0 bg-[#070B14]">
+    <!-- Full-Width White Section Header Band -->
+    <div class="section-header-band">
+      <div class="header-band-inner">
+        <span class="eyebrow-text">Investment Capital Pathways</span>
+        <h2 class="section-title">Franchise Ownership Models & Tiers</h2>
+        <p class="section-desc">Choose the franchise structure that matches your capital availability, time commitment, and portfolio growth targets.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Tier 1 -->
+        <div class="p-8 rounded-3xl bg-[#0D1527] border border-white/10 hover:border-[#C79718]/50 transition-all flex flex-col justify-between h-full group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30">Tier 1</span>
+              <span class="text-xs font-mono text-slate-400 uppercase tracking-wider font-semibold">Owner-Operator</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 min-h-[3.25rem] flex items-center">Low-Overhead Service Models</h3>
+            <div class="text-2xl font-extrabold text-[#C79718] font-mono mb-4">$75K – $200K <span class="text-xs text-slate-400 font-sans font-normal">All-In</span></div>
+            <p class="text-xs text-slate-300 leading-relaxed mb-6 min-h-[3.5rem]">
+              Home-based, van-based, or mobile operations with minimal commercial lease overhead. Focus on commercial cleaning, property inspection, residential painting, and mobile repair.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> No brick-and-mortar buildout delays</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> Breakeven typically in 3 to 6 months</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> High recurring gross operating margins (30%+)</li>
+            </ul>
+          </div>
+          <div class="mt-auto pt-2">
+            <button type="button" class="btn btn-outline w-full btn-sm btn-open-consultation-modal">
+              Explore Service Brands <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 2 (Highlighted) -->
+        <div class="p-8 rounded-3xl bg-[#0D1527] border-2 border-[#C79718] shadow-2xl flex flex-col justify-between h-full relative group">
+          <div class="absolute -top-3.5 inset-x-0 mx-auto w-max px-3.5 py-0.5 rounded-full bg-[#C79718] text-white text-[11px] font-bold uppercase tracking-wider shadow-lg">
+            Most Popular
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30">Tier 2</span>
+              <span class="text-xs font-mono text-slate-400 uppercase tracking-wider font-semibold">Retail & Boutique</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 min-h-[3.25rem] flex items-center">Single Retail Unit Flagship</h3>
+            <div class="text-2xl font-extrabold text-[#C79718] font-mono mb-4">$250K – $650K <span class="text-xs text-slate-400 font-sans font-normal">All-In</span></div>
+            <p class="text-xs text-slate-300 leading-relaxed mb-6 min-h-[3.5rem]">
+              Premier brick-and-mortar storefronts in lifestyle retail corridors. High foot-traffic concepts in artisan food, specialty fitness, medspas, and children's education centers.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> Full turnkey site selection & architectural buildout</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> 100% SBA 7(a) bank pre-approved funding</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> Dedicated general manager operations model</li>
+            </ul>
+          </div>
+          <div class="mt-auto pt-2">
+            <button type="button" class="btn btn-primary w-full btn-sm btn-open-consultation-modal">
+              Explore Retail Brands <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="p-8 rounded-3xl bg-[#0D1527] border border-white/10 hover:border-[#C79718]/50 transition-all flex flex-col justify-between h-full group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30">Tier 3</span>
+              <span class="text-xs font-mono text-slate-400 uppercase tracking-wider font-semibold">Empire Builder</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 min-h-[3.25rem] flex items-center">Multi-Unit & Master Franchise</h3>
+            <div class="text-2xl font-extrabold text-[#C79718] font-mono mb-4">$750K – $2.5M+ <span class="text-xs text-slate-400 font-sans font-normal">Package</span></div>
+            <p class="text-xs text-slate-300 leading-relaxed mb-6 min-h-[3.5rem]">
+              Exclusive territorial development agreements covering an entire metropolitan market (3 to 10 units). Designed for private equity investors and executive enterprise operators.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> Exclusive regional market lock-out rights</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> Reduced ongoing royalty & franchise fee tiers</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check2 text-[#C79718]"></i> Substantial enterprise valuation at ultimate exit</li>
+            </ul>
+          </div>
+          <div class="mt-auto pt-2">
+            <button type="button" class="btn btn-outline w-full btn-sm btn-open-consultation-modal">
+              Explore Master Territories <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       THE VANGUARD 4-STAGE FRANCHISE ADVISORY PROCESS
+       ======================================================================== -->
+  <section class="pb-20 pt-0 bg-[#0A1120] border-t border-white/5">
+    <!-- Full-Width White Section Header Band -->
+    <div class="section-header-band">
+      <div class="header-band-inner">
+        <span class="eyebrow-text">Fiduciary Consultation</span>
+        <h2 class="section-title">Our 4-Phase Franchise Acquisition Roadmap</h2>
+        <p class="section-desc">We guide you every step of the way—from personality and financial alignment through FDD Item 19 audit and Discovery Day negotiation.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/5 relative group hover:border-emerald-500/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+            01
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Diagnostic & Profile</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We evaluate your liquid net worth, risk profile, leadership style, and preferred industry verticals to create an ideal franchisee avatar.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/5 relative group hover:border-emerald-500/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+            02
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Brand Matching & Territory</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We present 3 to 5 curated franchise brands with open, protected territory in your target market and coordinate initial franchisor introductions.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/5 relative group hover:border-emerald-500/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+            03
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">FDD Review & Validation</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We dissect Item 19 Financial Performance Representations, audit franchisee turnover, and facilitate confidential peer validation calls.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-emerald-500/40 bg-emerald-500/[0.03] relative group">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+            04
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Discovery Day & Launch</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We prepare you for executive Discovery Day interviews at corporate headquarters, finalize SBA funding, and coordinate lease approvals.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FRANCHISE RESALES VS NEW DEVELOPMENT
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Strategic Comparison</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug mb-6">
+            Franchise Resale vs. Ground-Up Territory Launch
+          </h2>
+          <p class="text-sm text-slate-300 leading-relaxed mb-6">
+            Depending on your capital strategy, you can either step into an operating unit with proven day-one cash flow, or develop an untouched demographic with maximum long-term upside.
+          </p>
+
+          <div class="space-y-4">
+            <div class="p-4 rounded-xl bg-[#0D1527] border border-white/5">
+              <div class="flex items-center gap-3 mb-2">
+                <i class="bi bi-arrow-repeat text-emerald-400 text-lg"></i>
+                <h4 class="text-white font-bold text-sm">Franchise Resales (Existing Cash Flow)</h4>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Acquire an open, operating store with trained staff, active customers, and verifiable P&L history. Immediate cash flow from day one with established vendor accounts.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#0D1527] border border-white/5">
+              <div class="flex items-center gap-3 mb-2">
+                <i class="bi bi-geo-alt-fill text-gold-400 text-lg"></i>
+                <h4 class="text-white font-bold text-sm">New Territory Development (Pristine Demographics)</h4>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Secure the top real estate and demographic corridor in your city before competitors enter. Custom store design and complete multi-unit development schedules.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Stats Box -->
+        <div class="bg-white border border-slate-200 shadow-xl rounded-3xl p-6 sm:p-8 space-y-6">
+          <h3 class="text-xl font-bold text-slate-900">Why Use Vanguard for Franchise Advisory?</h3>
+          <div class="space-y-4 text-xs text-slate-600">
+            <div class="flex items-start gap-3">
+              <i class="bi bi-shield-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block mb-0.5">Zero Cost to You as a Buyer</strong>
+                <span class="text-slate-500">Our advisory compensation is funded exclusively by the franchisor’s marketing budget. Franchise fees remain strictly identical whether you work with us or go direct.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="bi bi-file-earmark-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block mb-0.5">Independent FDD Item 19 Analysis</strong>
+                <span class="text-slate-500">We audit historical corporate vs franchisee revenue distributions to verify whether franchisee profit claims reflect true operating conditions.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="bi bi-bank text-emerald-600 text-base shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block mb-0.5">SBA 7(a) & ROBS Funding Desk</strong>
+                <span class="text-slate-500">Direct integration with non-recourse SBA franchise lenders and 401(k) Rollover for Business Startups (ROBS) with zero tax penalty.</span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary w-full btn-open-consultation-modal text-sm sm:text-base py-3.5 px-4 sm:px-6 whitespace-normal leading-snug">
+            <span class="inline-flex items-center justify-center gap-2 flex-wrap text-center">
+              <span>Connect with a Franchise Director</span>
+              <i class="bi bi-arrow-right shrink-0"></i>
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       FINAL CONSULTATION CTA BANNER
+       ======================================================================== -->
+  <section class="py-20 border-t border-white/10 text-center constant-bg-cta" id="franchise-cta-banner">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <span class="inline-block px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider cta-badge">
+        Franchise Advisory Desk
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight cta-title">
+        Ready to Explore Your Franchise Ownership Options?
+      </h2>
+      <p class="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed cta-description">
+        Speak directly with a Senior Franchise Advisor. 100% free, confidential guidance, territory validation, and full FDD analysis.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 px-4 sm:px-0">
+        <button type="button" class="btn btn-primary btn-lg w-full max-w-md sm:w-auto px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold shadow-xl shadow-emerald-500/25 btn-open-consultation-modal justify-center text-center whitespace-normal">
+          Schedule Free Franchise Consultation <i class="bi bi-calendar-check shrink-0"></i>
+        </button>
+        <a href="contact.html" class="btn btn-outline btn-lg w-full max-w-md sm:w-auto px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base justify-center text-center">
+          Direct Partner Line <i class="bi bi-telephone shrink-0"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SITE FOOTER (Requirement 3: Advisory Desk in place of Top Sectors, Newsletter Subscription)
+       ======================================================================== -->
+  <footer class="bg-black text-slate-300 text-sm border-t border-white/10 mt-auto site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-3 mb-4 group focus:outline-none focus:ring-2 focus:ring-[#C79718] rounded-lg">
+            <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+              <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-extrabold tracking-tight text-white flex items-center gap-1 leading-tight">
+                VANGUARD <span class="text-[#C79718]">BROKERS</span>
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+                Business Brokerage & M&A Advisory
+              </span>
+            </div>
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4 max-w-sm">
+            Institutional business brokerage and franchise consulting practice. Vetted listings, certified business valuations, and confidential deal execution nationwide.
+          </p>
+          <div class="mb-5">
+            <span class="badge-ibba-member">
+              <i class="bi bi-shield-check"></i>
+              <span>IBBA & M&A Source Member</span>
+            </span>
+          </div>
+          <div class="flex items-center gap-3 text-slate-400">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links (About comes AFTER Sell) -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Navigation</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a></li>
+            <li><a href="buy-a-business.html" class="hover:text-emerald-400 transition-colors">Buy</a></li>
+            <li><a href="sell-your-business.html" class="hover:text-emerald-400 transition-colors">Sell</a></li>
+            <li><a href="about.html" class="hover:text-emerald-400 transition-colors">About</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Advisory Desk (Requirement 3: Replaces Top Sectors) -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Advisory Desk</h4>
+          <div class="space-y-3 text-xs leading-relaxed">
+            <p class="flex items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>555 Congress Ave, Suite 2100<br>Austin, TX 78701</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="bi bi-telephone-fill text-emerald-400 shrink-0"></i>
+              <span>+1 (800) 826-4827</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="bi bi-envelope-fill text-emerald-400 shrink-0"></i>
+              <span>advisory@vanguardbrokers.com</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription (Requirement 3: Deal Flow Digest) -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Deal Flow Digest</h4>
+          <p class="text-xs text-slate-400 mb-3">
+            Subscribe for monthly off-market acquisitions and franchise releases.
+          </p>
+          <form class="newsletter-form space-y-2">
+            <input type="email" class="form-input text-xs py-2" placeholder="Your business email" required>
+            <button type="submit" class="btn btn-primary w-full btn-sm">
+              Subscribe <i class="bi bi-send"></i>
+            </button>
+          </form>
+          <p class="text-[11px] text-slate-500 mt-2">No spam. Unsubscribe anytime.</p>
+        </div>
+
+      </div>
+
+      <!-- Legal Bottom Bar -->
+      <div class="pt-12 mt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div>
+          &copy; 2026 <span class="text-white font-bold">Vanguard Business Brokers & M&A Advisory</span> All rights reserved
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Representation</a>
+          <a href="404.html" class="hover:text-white transition-colors">404 Error</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SHARED GLOBAL MODALS
+       ======================================================================== -->
+  
+  <!-- 1. Book a Consultation Modal -->
+  <div id="modal-consultation" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-lg">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div>
+          <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block mb-0.5">Confidential Session</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Book a Free Consultation</h3>
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-xl p-1" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <form id="consultation-form" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Full Name <span class="text-rose-500">*</span>
+            </label>
+            <input type="text" id="consult-name" data-type="name" pattern="^[A-Za-z\s'.-]{2,}$" title="Full legal name (letters only, no numbers)" required class="form-input text-sm" placeholder="Johnathan Doe">
+          </div>
+          <div>
+            <label for="consult-email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Work Email <span class="text-rose-500">*</span>
+            </label>
+            <input type="email" id="consult-email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Valid email address (e.g. name@company.com)" required class="form-input text-sm" placeholder="john@company.com">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-phone" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Phone Number <span class="text-rose-500">*</span>
+            </label>
+            <input type="tel" id="consult-phone" pattern="[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]{6,15}" title="Valid phone number (digits only)" required class="form-input text-sm" placeholder="+1 (555) 019-2834">
+          </div>
+          <div>
+            <label for="consult-topic" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Topic of Consultation <span class="text-rose-500">*</span>
+            </label>
+            <select id="consult-topic" required class="form-select text-sm">
+              <option value="franchise" selected>Franchise Opportunity & Expansion</option>
+              <option value="buying">Acquiring an Existing Business</option>
+              <option value="selling">Selling My Business (Valuation & Exit)</option>
+              <option value="valuation">Certified Independent Valuation</option>
+              <option value="other">General Strategic Inquiry</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-date" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Preferred Date <span class="text-rose-500">*</span>
+            </label>
+            <input type="date" id="consult-date" required class="form-input text-sm">
+          </div>
+          <div>
+            <label for="consult-time" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Preferred Time Slot <span class="text-rose-500">*</span>
+            </label>
+            <select id="consult-time" required class="form-select text-sm">
+              <option value="09:00">09:00 AM - 10:00 AM EST</option>
+              <option value="11:00">11:00 AM - 12:00 PM EST</option>
+              <option value="14:00">02:00 PM - 03:00 PM EST</option>
+              <option value="16:00">04:00 PM - 05:00 PM EST</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="consult-advisor" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+            Advisor Preference (Optional)
+          </label>
+          <select id="consult-advisor" class="form-select text-sm">
+            <option value="marcus">Marcus Sterling (Franchise Advisory Director)</option>
+            <option value="first-available">First Available Senior Advisor</option>
+            <option value="elena">Elena Rostova (Healthcare & Tech)</option>
+            <option value="alexander">Alexander Vance (M&A Managing Partner)</option>
+          </select>
+        </div>
+
+        <p class="text-[11px] text-slate-400 text-center pt-2">
+          All consultations are held under strict confidential attorney-broker privilege. No public records are created.
+        </p>
+
+        <button type="submit" class="btn btn-primary w-full mt-2">
+          Confirm Consultation <i class="bi bi-calendar-check"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Saved Businesses Modal -->
+  <div id="modal-saved-listings" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-lg">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div class="flex items-center gap-2">
+          <i class="bi bi-heart-fill text-rose-500 text-lg"></i>
+          <h3 class="text-xl font-bold text-white tracking-tight">Saved Businesses & Concepts</h3>
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-xl p-1" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div id="saved-listings-container" class="space-y-4 max-h-[60vh] overflow-y-auto pr-1">
+        <!-- Rendered dynamically by listings.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" class="back-to-top" aria-label="Back to top of page">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Core JavaScript Libraries -->
+  <script src="assets/js/listings.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

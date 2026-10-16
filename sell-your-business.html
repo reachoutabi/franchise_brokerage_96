@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Your Business | Confidential Valuation & M&A Brokerage | Vanguard Brokers</title>
+  <meta name="description" content="Maximize your business exit value with Vanguard Brokers. Free certified valuation estimate, 100% confidential blind marketing, and access to 12,500+ vetted private equity and strategic buyers.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            emerald: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            gold: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="bg-[#070B14] text-slate-100 antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================================
+       STICKY NAVBAR (Section 10 & 15.2 - Identical on every page)
+       ======================================================================== -->
+  <header class="site-header flex items-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl w-full mx-auto flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-[#C79718] rounded-lg">
+        <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg font-extrabold tracking-tight text-white flex items-center gap-1 leading-tight">
+            VANGUARD <span class="text-[#C79718]">BROKERS</span>
+          </span>
+          <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+            Business Brokerage & M&A Advisory
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav hidden lg:flex items-center gap-6 xl:gap-8">
+        <div class="relative nav-dropdown-wrapper group">
+          <a href="index.html" class="nav-link nav-dropdown-trigger flex items-center gap-1.5" id="home-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span class="nav-link-text">Home</span>
+            <i class="bi bi-chevron-down dropdown-chevron text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+          </a>
+          <div class="nav-dropdown-menu absolute top-full inset-inline-start-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-[1050]">
+            <div class="nav-dropdown-card">
+              <a href="index.html" class="nav-dropdown-item">
+                <span>Business Brokerage</span>
+              </a>
+              <a href="home-2.html" class="nav-dropdown-item">
+                <span>Franchise</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="buy-a-business.html" class="nav-link">Buy</a>
+        <a href="sell-your-business.html" class="nav-link active">Sell</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal relative hidden lg:inline-flex" title="Saved Businesses" aria-label="View saved businesses">
+          <i class="bi bi-heart"></i>
+          <span class="saved-counter-badge absolute -top-1.5 -inset-inline-end-1.5 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-bold flex items-center justify-center hidden">0</span>
+        </button>
+
+        <button type="button" class="btn-icon-toggle theme-toggle-btn hidden lg:inline-flex" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn hidden lg:inline-flex" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+
+        <button type="button" class="btn btn-primary btn-sm sm:btn-md btn-open-consultation-modal hidden lg:inline-flex">
+          Free Consultation <i class="bi bi-calendar-event"></i>
+        </button>
+
+        <button type="button" id="btn-mobile-menu-toggle" class="hamburger-btn btn-icon-toggle lg:hidden" aria-label="Open navigation menu">
+          <i class="bi bi-list text-2xl"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-nav-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[2000] hidden lg:hidden"></div>
+  <aside id="mobile-nav-drawer" class="lg:hidden fixed top-0 bottom-0 w-[85%] max-w-sm bg-[#0D1527] border-e border-white/10 z-[2010] p-6 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-extrabold text-white tracking-tight leading-tight">VANGUARD <span class="text-[#C79718]">BROKERS</span></span>
+            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">Business Brokerage & M&A Advisory</span>
+          </div>
+        </a>
+        <button type="button" id="btn-close-mobile-menu" class="text-slate-400 hover:text-white text-2xl p-1" aria-label="Close menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-3">
+        <!-- Mobile Home Dropdown Group -->
+        <div class="border-b border-white/5 pb-2">
+          <button type="button" class="mobile-dropdown-toggle w-full text-lg font-bold flex items-center justify-between text-slate-200 hover:text-emerald-400 focus:outline-none py-2" aria-expanded="false" data-target="mobile-home-submenu">
+            <span class="flex items-center gap-2">Home</span>
+            <i class="bi bi-chevron-down text-sm transition-transform duration-200 mobile-submenu-chevron"></i>
+          </button>
+          <div id="mobile-home-submenu" class="ps-3 space-y-1 mt-1 hidden">
+            <a href="index.html" class="flex items-center gap-2.5 py-2 text-sm font-medium text-slate-300 hover:text-white">
+              <span>Business Brokerage</span>
+            </a>
+            <a href="home-2.html" class="flex items-center gap-2.5 py-2 text-sm font-medium text-slate-300 hover:text-white">
+              <span>Franchise</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="buy-a-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Buy</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="sell-your-business.html" class="text-emerald-400 font-bold text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Sell</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="about.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>About</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="contact.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Contact</span> <i class="bi bi-arrow-right"></i>
+        </a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-white/10 space-y-3">
+      <button type="button" class="btn btn-primary w-full btn-open-consultation-modal">
+        Book Free Consultation <i class="bi bi-calendar-event"></i>
+      </button>
+      <div class="flex items-center justify-around pt-2">
+        <button type="button" class="btn-icon-toggle theme-toggle-btn" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal" title="Saved Businesses">
+          <i class="bi bi-heart"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       PAGE HERO (Section 4 & 15.5 - Identical Hero Height)
+       ======================================================================== -->
+  <section class="page-hero relative">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="page-hero-scrim"></div>
+    <div class="page-hero-content text-center py-8">
+      
+      <!-- Breadcrumb -->
+      <nav class="flex justify-center items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-300 mb-4" aria-label="Breadcrumb">
+        <a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a>
+        <span class="text-slate-500">/</span>
+        <span class="text-emerald-400">Sell Your Business</span>
+      </nav>
+
+      <div class="mb-4 flex justify-center">
+        <span class="hero-badge">
+          <i class="bi bi-shield-lock text-emerald-400"></i> Certified M&A Valuation & Advisory
+        </span>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-4xl mx-auto">
+        Maximize Your Enterprise Value. <span class="text-gold-500">Exit Confidentially.</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+        You spent decades building your enterprise. We protect your legacy with strict confidentiality protocols, rigorous financial recasting, and direct access to 12,500+ vetted private equity and strategic buyers.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION: SELLER STATISTICS (Section 4)
+       ======================================================================== -->
+  <section class="py-12 bg-[#0D1527] border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white mb-2 stat-counter num-tabular" data-target="142">
+            142
+          </div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-400">Avg. Days to Close</p>
+        </div>
+
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-2 stat-counter num-tabular" data-target="96.2" data-suffix="%" data-decimals="1">
+            96.2%
+          </div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-400">Asking-to-Sold Ratio</p>
+        </div>
+
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white mb-2 stat-counter num-tabular" data-target="12500" data-suffix="+">
+            12,500+
+          </div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-400">Institutional & HNW Buyers</p>
+        </div>
+
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white mb-2 stat-counter num-tabular" data-target="0" data-prefix="$">
+            $0
+          </div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-400">Upfront Marketing Fees</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION: WHY SELL WITH US (Section 4)
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">
+          Seller Representation
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          Why Business Owners Trust Vanguard With Their Life's Work
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Selling without professional representation costs founders an average of 22% in lost valuation and exposes operations to competitor poaching.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-2xl bg-[#0D1527] border border-white/5 hover:border-emerald-500/40 transition-colors h-full flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 shrink-0">
+            <i class="bi bi-eye-slash-fill"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 min-h-[3rem] flex items-center">Absolute Blind Marketing</h3>
+          <p class="text-sm text-slate-400 leading-relaxed flex-1">
+            Your identity, location, and brand name are never disclosed publicly. Buyers only receive confidential executive summaries after signing binding legal NDAs and providing verified liquid proof of funds.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#0D1527] border border-white/5 hover:border-emerald-500/40 transition-colors h-full flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 shrink-0">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 min-h-[3rem] flex items-center">Comprehensive EBITDA Recasting</h3>
+          <p class="text-sm text-slate-400 leading-relaxed flex-1">
+            We identify every legitimate discretionary add-back (owner benefits, non-recurring legal expenses, depreciation, family wages) to dramatically expand your recognized cash flow base and transaction multiple.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#0D1527] border border-white/5 hover:border-emerald-500/40 transition-colors h-full flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 shrink-0">
+            <i class="bi bi-briefcase-fill"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 min-h-[3rem] flex items-center">Competitive Auction Dynamics</h3>
+          <p class="text-sm text-slate-400 leading-relaxed flex-1">
+            We don’t just introduce one buyer; we market your Confidential Information Memorandum to strategic competitors, private equity sponsors, and high-net-worth operators to spark competing Letters of Intent.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTERACTIVE BUSINESS VALUATION ESTIMATOR (Section 4)
+       ======================================================================== -->
+  <section class="py-20 bg-[#0D1527] border-y border-white/5" id="valuation-calculator-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">
+          Self-Service Estimator
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          Instant Business Valuation Estimator
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+          Input your key operational numbers below to generate an indicative market valuation range based on real 2026 private transaction multiples.
+        </p>
+      </div>
+
+      <div class="bg-[#070B14] p-6 sm:p-10 rounded-3xl border border-white/10 shadow-2xl">
+        <form id="valuation-calc-form" class="space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="calc-industry" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Industry Sector *
+              </label>
+              <select id="calc-industry" class="form-select text-sm">
+                <option value="services">Commercial Services & B2B (3.5x - 4.8x SDE)</option>
+                <option value="manufacturing">Precision Manufacturing & Defense (4.2x - 6.2x EBITDA)</option>
+                <option value="health">Healthcare, MedSpa & Dental (3.8x - 5.5x SDE)</option>
+                <option value="food">Food & Beverage / Restaurant (2.6x - 3.8x SDE)</option>
+                <option value="automotive">Automotive Repair & Collision (3.0x - 4.4x SDE)</option>
+                <option value="ecommerce">E-Commerce & Digital Brands (2.8x - 4.0x SDE)</option>
+                <option value="retail">Retail & Laundromats (2.4x - 3.5x SDE)</option>
+                <option value="education">Education & Childcare (3.2x - 4.6x SDE)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="calc-growth" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                3-Year Revenue Trend *
+              </label>
+              <select id="calc-growth" class="form-select text-sm">
+                <option value="moderate">Moderate Growth (+5% to +15% YoY)</option>
+                <option value="high">Rapid Expansion (+15% to +35% YoY)</option>
+                <option value="flat">Stable / Flat Revenue</option>
+                <option value="declining">Slight Decline (-5% to -10% YoY)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div>
+              <label for="calc-revenue" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Annual Gross Revenue ($) *
+              </label>
+              <input type="number" id="calc-revenue" class="form-input text-sm" placeholder="e.g. 2500000" value="2500000" min="50000" step="10000" required>
+            </div>
+
+            <div>
+              <label for="calc-profit" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Net Profit / Cash Flow ($) *
+              </label>
+              <input type="number" id="calc-profit" class="form-input text-sm" placeholder="e.g. 480000" value="480000" min="10000" step="5000" required>
+            </div>
+
+            <div>
+              <label for="calc-years" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Years in Operation *
+              </label>
+              <input type="number" id="calc-years" class="form-input text-sm" placeholder="e.g. 8" value="8" min="1" max="80" required>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" id="btn-calc-valuation" class="btn btn-primary w-full btn-lg">
+              Calculate Indicative Valuation <i class="bi bi-calculator"></i>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Result Card (Revealed on calculate) -->
+        <div id="valuation-result-card" class="mt-8 pt-8 border-t border-white/10 hidden animate-fadeIn">
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-emerald-950/70 via-slate-900 to-[#070B14] border border-emerald-500/30 text-center">
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Estimated Enterprise Valuation Bracket</span>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 my-4">
+              <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 w-full sm:w-auto sm:min-w-[200px]">
+                <span class="text-xs text-slate-400 block font-semibold">Conservative Range</span>
+                <span id="calc-res-low" class="text-2xl sm:text-3xl font-extrabold text-white num-tabular">$1,680,000</span>
+              </div>
+              <span class="text-2xl text-emerald-400 font-bold hidden sm:inline">—</span>
+              <div class="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 w-full sm:w-auto sm:min-w-[200px]">
+                <span class="text-xs text-emerald-400 block font-semibold">Optimized M&A Target</span>
+                <span id="calc-res-high" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 num-tabular">$2,300,000</span>
+              </div>
+            </div>
+
+            <div class="inline-block px-4 py-1.5 rounded-full bg-slate-900 border border-white/10 text-xs font-mono text-slate-300 mb-4">
+              Applied Multiple Range: <span id="calc-res-multiple" class="text-emerald-400 font-bold">3.5x – 4.8x SDE</span>
+            </div>
+
+            <p class="text-xs text-slate-400 max-w-xl mx-auto mb-6 leading-relaxed">
+              *Disclaimer: This automated calculation represents an indicative preliminary model based on sector medians. Actual purchase prices depend on customer concentration, management autonomy, physical asset conditions, and verified CPA recasting.
+            </p>
+
+            <button type="button" id="btn-apply-valuation-to-form" class="btn btn-primary btn-md">
+              Apply Figures to Confidential Listing Form Below <i class="bi bi-arrow-down-circle"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       WHAT YOUR BLIND LISTING LOOKS LIKE (Section 4 & 15.6)
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">
+            Confidentiality in Practice
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+            What Your Business Looks Like on Our Marketplace
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
+            We use anonymous blind profiles that highlight your financial strength and stability without ever revealing identifying trade names, exact addresses, or proprietary trademarks.
+          </p>
+
+          <div class="space-y-4 text-sm text-slate-400">
+            <div class="flex items-center gap-3">
+              <i class="bi bi-check-circle-fill text-emerald-400"></i>
+              <span>Generalized Metro/Sub-region (e.g. "Greater Austin Metro")</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="bi bi-check-circle-fill text-emerald-400"></i>
+              <span>High-level industry categorization without customer names</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="bi bi-check-circle-fill text-emerald-400"></i>
+              <span>Accurate CPA-recasted earnings figures that attract serious buyers</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="bi bi-check-circle-fill text-emerald-400"></i>
+              <span>NDA required prior to transmitting company name or address</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Blind Listing Mockup Card -->
+        <div class="p-6 rounded-3xl bg-[#0D1527] border-2 border-emerald-500/30 shadow-2xl relative">
+          <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+            <span class="badge-confidential"><i class="bi bi-lock-fill"></i> Blind Confidential Profile</span>
+            <span class="text-xs font-mono text-slate-400">REF: BLIND-MKTG-DEMO</span>
+          </div>
+          
+          <h3 class="text-xl font-bold text-white mb-2">High-Margin Commercial B2B Facility Services Contractor</h3>
+          <p class="text-xs text-emerald-400 font-semibold mb-4"><i class="bi bi-geo-alt"></i> Southeast Metro Hub • Est. 2012 • 28 Staff</p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 p-3 rounded-xl bg-[#070B14] border border-white/5 text-xs text-center mb-4">
+            <div>
+              <span class="text-slate-400 block text-[10px]">Asking Price</span>
+              <strong class="text-white font-bold num-tabular">$2,450,000</strong>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[10px]">Cash Flow (SDE)</span>
+              <strong class="text-emerald-400 font-bold num-tabular">$580,000</strong>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[10px]">Gross Revenue</span>
+              <span class="text-slate-200 num-tabular">$3,800,000</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[10px]">SBA Financing</span>
+              <span class="text-emerald-400 font-bold">Pre-Approved</span>
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-400 leading-relaxed mb-4">
+            Established recurring commercial contract portfolio with medical plazas and corporate parks. Operations manager and tenured field leads running daily execution. Owner operates as CEO.
+          </p>
+
+          <div class="p-3 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between text-xs">
+            <span class="text-slate-700 font-medium"><i class="bi bi-file-earmark-lock text-emerald-600"></i> Full CIM Requires Electronic NDA</span>
+            <span class="text-emerald-600 font-bold">Protected</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       LIST YOUR BUSINESS MULTI-STEP FORM (Section 4 & 15.7)
+       ======================================================================== -->
+  <section class="py-20 bg-[#0D1527] border-y border-white/5" id="seller-multistep-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">
+          Confidential Mandate Registration
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          List Your Business for Evaluation
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+          Complete our confidential 4-step intake form. A senior managing broker will prepare a preliminary valuation recasting and reach out within 24 business hours.
+        </p>
+      </div>
+
+      <!-- Stepper Progress Header -->
+      <div class="stepper-progress-wrapper mb-8">
+        <div class="stepper-track-bg">
+          <div class="stepper-track-fill" id="stepper-progress-fill" style="width: 0%;"></div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 relative z-10">
+          <div class="step-item active cursor-pointer" data-step-target="1">
+            <div class="step-number">1</div>
+            <span class="text-xs font-semibold">Owner Info</span>
+          </div>
+          <div class="step-item" data-step-target="2">
+            <div class="step-number">2</div>
+            <span class="text-xs font-semibold">Business Profile</span>
+          </div>
+          <div class="step-item" data-step-target="3">
+            <div class="step-number">3</div>
+            <span class="text-xs font-semibold">Financials</span>
+          </div>
+          <div class="step-item" data-step-target="4">
+            <div class="step-number">4</div>
+            <span class="text-xs font-semibold">Review & Submit</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi-step Form Card -->
+      <div class="bg-[#070B14] p-6 sm:p-10 rounded-3xl border border-white/10 shadow-2xl">
+        <form id="seller-multistep-form">
+          
+          <!-- STEP 1: OWNER DETAILS -->
+          <div class="seller-step-content space-y-4" data-step="1">
+            <h3 class="text-xl font-bold text-white mb-2">Step 1: Primary Owner Contact Information</h3>
+            <p class="text-xs text-slate-400 mb-4">Your personal details are stored exclusively in our secure vault and never revealed to potential acquirers.</p>
+            
+            <div>
+              <label for="seller-owner-name" class="block text-xs font-semibold text-slate-300 mb-1">Full Legal Name *</label>
+              <input type="text" id="seller-owner-name" data-type="name" pattern="^[A-Za-z\s'.-]{2,}$" title="Full legal name (letters only, no numbers)" class="form-input text-sm" placeholder="e.g. Richard Hendricks" required>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="seller-owner-email" class="block text-xs font-semibold text-slate-300 mb-1">Confidential Email *</label>
+                <input type="email" id="seller-owner-email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Valid email address (e.g. name@company.com)" class="form-input text-sm" placeholder="richard@private-email.com" required>
+              </div>
+              <div>
+                <label for="seller-owner-phone" class="block text-xs font-semibold text-slate-300 mb-1">Direct Mobile Phone *</label>
+                <input type="tel" id="seller-owner-phone" pattern="[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]{6,15}" title="Valid mobile phone number (digits only)" class="form-input text-sm" placeholder="+1 (555) 432-8765" required>
+              </div>
+            </div>
+
+            <div>
+              <label for="seller-contact-time" class="block text-xs font-semibold text-slate-300 mb-1">Preferred Time for Confidential Call</label>
+              <select id="seller-contact-time" class="form-select text-sm">
+                <option value="Mornings (9am - 12pm)">Mornings (9am - 12pm EST)</option>
+                <option value="Afternoons (12pm - 5pm)">Afternoons (12pm - 5pm EST)</option>
+                <option value="Evenings (5pm - 8pm)">Evenings (5pm - 8pm EST)</option>
+                <option value="Weekends Only">Weekends Only</option>
+              </select>
+            </div>
+
+            <div class="pt-4 flex justify-end">
+              <button type="button" id="seller-next-1" class="btn btn-primary">
+                Next: Business Profile <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: BUSINESS PROFILE -->
+          <div class="seller-step-content space-y-4 hidden" data-step="2">
+            <h3 class="text-xl font-bold text-white mb-2">Step 2: Business Profile & Operations</h3>
+            <p class="text-xs text-slate-400 mb-4">Provide operational details so our valuation analysts can determine your sector benchmark.</p>
+
+            <div>
+              <label for="seller-biz-name" class="block text-xs font-semibold text-slate-300 mb-1">Operating Business Name *</label>
+              <input type="text" id="seller-biz-name" class="form-input text-sm" placeholder="e.g. Pied Piper Enterprises LLC" minlength="2" required>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="seller-industry" class="block text-xs font-semibold text-slate-300 mb-1">Primary Industry *</label>
+                <select id="seller-industry" class="form-select text-sm" required>
+                  <option value="Commercial Services">Commercial Services & Facilities</option>
+                  <option value="Manufacturing">Manufacturing & Industrial</option>
+                  <option value="Healthcare">Healthcare, Dental & Wellness</option>
+                  <option value="Food & Beverage">Food & Beverage / Restaurant</option>
+                  <option value="Automotive">Automotive & Collision Repair</option>
+                  <option value="Retail">Retail & Laundromats</option>
+                  <option value="Education">Education & Childcare</option>
+                  <option value="E-commerce">E-Commerce & Distribution</option>
+                </select>
+              </div>
+              <div>
+                <label for="seller-location" class="block text-xs font-semibold text-slate-300 mb-1">City, State *</label>
+                <input type="text" id="seller-location" data-type="location" pattern="^[A-Za-z\s,.'-]{2,}$" title="City, State (e.g. Austin, TX)" class="form-input text-sm" placeholder="e.g. Austin, TX" required>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="seller-years" class="block text-xs font-semibold text-slate-300 mb-1">Years Established</label>
+                <input type="number" id="seller-years" min="0" max="150" class="form-input text-sm" placeholder="e.g. 12" value="10">
+              </div>
+              <div>
+                <label for="seller-employees" class="block text-xs font-semibold text-slate-300 mb-1">Total Full-Time Staff</label>
+                <input type="number" id="seller-employees" min="0" max="100000" class="form-input text-sm" placeholder="e.g. 15" value="12">
+              </div>
+            </div>
+
+            <div class="pt-4 flex justify-between">
+              <button type="button" id="seller-back-2" class="btn btn-outline">
+                <i class="bi bi-arrow-left"></i> Back
+              </button>
+              <button type="button" id="seller-next-2" class="btn btn-primary">
+                Next: Financials <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: FINANCIALS -->
+          <div class="seller-step-content space-y-4 hidden" data-step="3">
+            <h3 class="text-xl font-bold text-white mb-2">Step 3: Financial Performance</h3>
+            <p class="text-xs text-slate-400 mb-4">Input figures from your most recent 12 months (or last filed tax return).</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="seller-revenue" class="block text-xs font-semibold text-slate-300 mb-1">Annual Gross Revenue ($) *</label>
+                <input type="number" id="seller-revenue" min="1" step="any" data-type="positive-number" class="form-input text-sm" placeholder="e.g. 2500000" required>
+              </div>
+              <div>
+                <label for="seller-profit" class="block text-xs font-semibold text-slate-300 mb-1">Annual Net Cash Flow / SDE ($) *</label>
+                <input type="number" id="seller-profit" min="1" step="any" data-type="positive-number" class="form-input text-sm" placeholder="e.g. 480000" required>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="seller-asking-price" class="block text-xs font-semibold text-slate-300 mb-1">Target Asking Price ($) (Optional)</label>
+                <input type="number" id="seller-asking-price" min="1" step="any" data-type="positive-number" class="form-input text-sm" placeholder="e.g. 2100000 (or leave blank)">
+              </div>
+              <div>
+                <label for="seller-reason" class="block text-xs font-semibold text-slate-300 mb-1">Primary Reason for Selling</label>
+                <select id="seller-reason" class="form-select text-sm">
+                  <option value="Planned Retirement">Planned Retirement</option>
+                  <option value="Other Business Ventures">Divesting to Focus on Other Ventures</option>
+                  <option value="Relocation">Geographic Relocation</option>
+                  <option value="Health / Personal">Personal / Family Reasons</option>
+                  <option value="Seeking Growth Capital">Seeking Strategic Majority Partner</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="pt-4 flex justify-between">
+              <button type="button" id="seller-back-3" class="btn btn-outline">
+                <i class="bi bi-arrow-left"></i> Back
+              </button>
+              <button type="button" id="seller-next-3" class="btn btn-primary">
+                Next: Review Submission <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 4: REVIEW & SUBMIT -->
+          <div class="seller-step-content space-y-4 hidden" data-step="4">
+            <h3 class="text-xl font-bold text-white mb-2">Step 4: Review Your Submission</h3>
+            <p class="text-xs text-slate-400 mb-4">Please verify the confidential details before submitting for certified broker review.</p>
+
+            <div id="seller-review-summary" class="p-6 rounded-2xl bg-slate-900 border border-white/10">
+              <!-- Rendered via forms.js -->
+            </div>
+
+            <div class="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-slate-300">
+              <i class="bi bi-shield-check text-emerald-400"></i> By submitting this mandate, you agree to receive a confidential call from a Vanguard managing broker. Your information is protected by our non-disclosure policy.
+            </div>
+
+            <div class="pt-4 flex justify-between">
+              <button type="button" id="seller-back-4" class="btn btn-outline">
+                <i class="bi bi-arrow-left"></i> Back to Edit
+              </button>
+              <button type="submit" id="seller-submit-btn" class="btn btn-primary">
+                Submit for Confidential Evaluation <i class="bi bi-check2-circle"></i>
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       REUSABLE FOOTER (Section 15.6 - Identical on every page)
+       ======================================================================== -->
+  <footer class="bg-black text-slate-300 text-sm border-t border-white/10 mt-auto site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-3 mb-4 group">
+            <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+              <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-white tracking-tight leading-tight">
+                VANGUARD <span class="text-[#C79718]">BROKERS</span>
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+                Business Brokerage & M&A Advisory
+              </span>
+            </div>
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4 max-w-sm">
+            Institutional business brokerage and franchise consulting practice. Vetted listings, certified business valuations, and confidential deal execution nationwide.
+          </p>
+          <div class="mb-5">
+            <span class="badge-ibba-member">
+              <i class="bi bi-shield-check"></i>
+              <span>IBBA & M&A Source Member</span>
+            </span>
+          </div>
+          <div class="flex items-center gap-3 text-slate-400">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Navigation</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a></li>
+            <li><a href="buy-a-business.html" class="hover:text-emerald-400 transition-colors">Buy</a></li>
+            <li><a href="sell-your-business.html" class="hover:text-emerald-400 transition-colors text-emerald-400 font-semibold">Sell</a></li>
+            <li><a href="about.html" class="hover:text-emerald-400 transition-colors">About</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Advisory Desk (Replaces Top Sectors) -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Advisory Desk</h4>
+          <div class="space-y-3 text-xs leading-relaxed">
+            <p class="flex items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>555 Congress Ave, Suite 2100<br>Austin, TX 78701</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="bi bi-telephone-fill text-emerald-400 shrink-0"></i>
+              <span>+1 (800) 826-4827</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="bi bi-envelope-fill text-emerald-400 shrink-0"></i>
+              <span>advisory@vanguardbrokers.com</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Deal Flow Digest</h4>
+          <p class="text-xs text-slate-400 mb-3">
+            Subscribe for monthly off-market acquisitions and franchise releases.
+          </p>
+          <form class="newsletter-form space-y-2">
+            <input type="email" class="form-input text-xs py-2" placeholder="Your business email" required>
+            <button type="submit" class="btn btn-primary w-full btn-sm">
+              Subscribe <i class="bi bi-send"></i>
+            </button>
+          </form>
+          <p class="text-[11px] text-slate-500 mt-2">No spam. Unsubscribe anytime.</p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div>
+          &copy; 2026 <span class="text-white font-bold">Vanguard Business Brokers & M&A Advisory</span> All rights reserved
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="404.html" class="hover:text-white transition-colors">404 Error</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SHARED GLOBAL MODALS
+       ======================================================================== -->
+  
+  <!-- 1. Consultation Modal -->
+  <div id="modal-consultation" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Confidential Session</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Book a Free Consultation</h3>
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-2xl" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <form id="modal-consultation-form" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-name" class="block text-xs font-semibold text-slate-300 mb-1">Full Name *</label>
+            <input type="text" id="consult-name" class="form-input text-sm" placeholder="Johnathan Doe" required>
+          </div>
+          <div>
+            <label for="consult-email" class="block text-xs font-semibold text-slate-300 mb-1">Work Email *</label>
+            <input type="email" id="consult-email" class="form-input text-sm" placeholder="john@company.com" required>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-phone" class="block text-xs font-semibold text-slate-300 mb-1">Phone Number *</label>
+            <input type="tel" id="consult-phone" class="form-input text-sm" placeholder="+1 (555) 019-2834" required>
+          </div>
+          <div>
+            <label for="consult-topic" class="block text-xs font-semibold text-slate-300 mb-1">Topic *</label>
+            <select id="consult-topic" class="form-select text-sm" required>
+              <option value="Selling My Business">Selling My Business</option>
+              <option value="Buying an Existing Business">Buying an Existing Business</option>
+              <option value="Franchise Opportunity Consulting">Franchise Consulting</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-date" class="block text-xs font-semibold text-slate-300 mb-1">Preferred Date *</label>
+            <input type="date" id="consult-date" class="form-input text-sm" required>
+          </div>
+          <div>
+            <label for="consult-time" class="block text-xs font-semibold text-slate-300 mb-1">Preferred Time *</label>
+            <select id="consult-time" class="form-select text-sm" required>
+              <option value="09:00 AM - 10:00 AM EST">09:00 AM - 10:00 AM EST</option>
+              <option value="11:00 AM - 12:00 PM EST">11:00 AM - 12:00 PM EST</option>
+              <option value="02:00 PM - 03:00 PM EST">02:00 PM - 03:00 PM EST</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="consult-advisor" class="block text-xs font-semibold text-slate-300 mb-1">Advisor (Optional)</label>
+          <select id="consult-advisor" class="form-select text-sm">
+            <option value="First Available Senior Broker">First Available Senior Broker</option>
+            <option value="Marcus Sterling, CBI">Marcus Sterling, CBI</option>
+            <option value="Elena Rostova, CVA">Elena Rostova, CVA</option>
+          </select>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="btn btn-primary w-full">
+            Confirm Consultation <i class="bi bi-calendar-check"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Saved Listings Modal -->
+  <div id="modal-saved-listings" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Your Portfolio</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Saved Businesses</h3>
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-2xl" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div id="saved-listings-list-container" class="max-h-[60vh] overflow-y-auto pr-1"></div>
+    </div>
+  </div>
+
+  <!-- 3. Confirmation Modal -->
+  <div id="modal-confirmation" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-md text-center">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4 border border-emerald-500/40">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <h3 id="confirmation-modal-title" class="text-2xl font-bold text-white mb-2">Submission Received</h3>
+      <div id="confirmation-modal-ref" class="inline-block px-3 py-1 rounded-full bg-slate-800 border border-white/10 text-xs font-mono text-emerald-400 mb-4">
+        Reference ID: SELL-0000
+      </div>
+      <p id="confirmation-modal-message" class="text-slate-300 text-sm mb-6 leading-relaxed"></p>
+      <button type="button" class="btn btn-primary w-full btn-close-modal">
+        Done <i class="bi bi-check2"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Core Scripts -->
+  <script src="assets/js/listings.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

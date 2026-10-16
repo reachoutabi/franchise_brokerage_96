@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanguard Business Brokers | Confidential M&A Advisory & Business Sales</title>
+  <meta name="description" content="Premier corporate business brokerage and M&A advisory firm. Explore vetted businesses for sale, confidential valuation advisory, and end-to-end transaction closing.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            emerald: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            gold: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="bg-[#070B14] text-slate-100 antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================================
+       STICKY NAVBAR (Section 10 & 15.2)
+       ======================================================================== -->
+  <header class="site-header flex items-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl w-full mx-auto flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-[#C79718] rounded-lg">
+        <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg font-extrabold tracking-tight text-white flex items-center gap-1 leading-tight">
+            VANGUARD <span class="text-[#C79718]">BROKERS</span>
+          </span>
+          <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+            Business Brokerage & M&A Advisory
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Section 15.2 - Visible on desktop, hidden on mobile) -->
+      <nav class="desktop-nav hidden lg:flex items-center gap-6 xl:gap-8">
+        <div class="relative nav-dropdown-wrapper group">
+          <a href="index.html" class="nav-link nav-dropdown-trigger flex items-center gap-1.5 active" id="home-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span class="nav-link-text">Home</span>
+            <i class="bi bi-chevron-down dropdown-chevron text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+          </a>
+          <div class="nav-dropdown-menu absolute top-full inset-inline-start-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-[1050]">
+            <div class="nav-dropdown-card">
+              <a href="index.html" class="nav-dropdown-item active">
+                <span>Business Brokerage</span>
+              </a>
+              <a href="home-2.html" class="nav-dropdown-item">
+                <span>Franchise</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="buy-a-business.html" class="nav-link">Buy</a>
+        <a href="sell-your-business.html" class="nav-link">Sell</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action Controls & CTAs -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <!-- Saved Favorites Trigger (Hidden on mobile when hamburger appears) -->
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal relative hidden lg:inline-flex" title="Saved Businesses" aria-label="View saved businesses">
+          <i class="bi bi-heart"></i>
+          <span class="saved-counter-badge absolute -top-1.5 -inset-inline-end-1.5 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-bold flex items-center justify-center hidden">0</span>
+        </button>
+
+        <!-- Theme Toggle (Hidden on mobile when hamburger appears) -->
+        <button type="button" class="btn-icon-toggle theme-toggle-btn hidden lg:inline-flex" title="Toggle Dark/Light Mode" aria-label="Toggle dark/light theme">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+
+        <!-- RTL Toggle (Hidden on mobile when hamburger appears) -->
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn hidden lg:inline-flex" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+
+        <!-- Primary CTA Button (Hidden on mobile when hamburger appears) -->
+        <button type="button" class="btn btn-primary btn-sm sm:btn-md btn-open-consultation-modal hidden lg:inline-flex">
+          Free Consultation <i class="bi bi-calendar-event"></i>
+        </button>
+
+        <!-- Mobile Hamburger Toggle (Appears ONLY when navbar list is hidden) -->
+        <button type="button" id="btn-mobile-menu-toggle" class="hamburger-btn btn-icon-toggle lg:hidden" aria-label="Open navigation menu">
+          <i class="bi bi-list text-2xl"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Slide-out Menu (Section 10 & 15.8 - Hidden on desktop) -->
+  <div id="mobile-nav-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[2000] hidden lg:hidden"></div>
+  <aside id="mobile-nav-drawer" class="lg:hidden fixed top-0 bottom-0 w-[85%] max-w-sm bg-[#0D1527] border-e border-white/10 z-[2010] p-6 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-extrabold text-white tracking-tight leading-tight">VANGUARD <span class="text-[#C79718]">BROKERS</span></span>
+            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">Business Brokerage & M&A Advisory</span>
+          </div>
+        </a>
+        <button type="button" id="btn-close-mobile-menu" class="text-slate-400 hover:text-white text-2xl p-1" aria-label="Close menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-3">
+        <!-- Mobile Home Dropdown Group -->
+        <div class="border-b border-white/5 pb-2">
+          <button type="button" class="mobile-dropdown-toggle w-full text-lg font-bold flex items-center justify-between text-emerald-400 focus:outline-none py-2" aria-expanded="true" data-target="mobile-home-submenu">
+            <span class="flex items-center gap-2">Home</span>
+            <i class="bi bi-chevron-down text-sm transition-transform duration-200 mobile-submenu-chevron rotate-180"></i>
+          </button>
+          <div id="mobile-home-submenu" class="ps-3 space-y-1 mt-1">
+            <a href="index.html" class="flex items-center gap-2.5 py-2 text-sm font-bold text-emerald-400">
+              <span>Business Brokerage</span>
+            </a>
+            <a href="home-2.html" class="flex items-center gap-2.5 py-2 text-sm font-medium text-slate-300 hover:text-white">
+              <span>Franchise</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="buy-a-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Buy</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="sell-your-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Sell</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="about.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>About</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="contact.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Contact</span> <i class="bi bi-arrow-right"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-white/10 space-y-3">
+      <button type="button" class="btn btn-primary w-full btn-open-consultation-modal">
+        Book Free Consultation <i class="bi bi-calendar-event"></i>
+      </button>
+      <div class="flex items-center justify-around pt-2">
+        <button type="button" class="btn-icon-toggle theme-toggle-btn" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal" title="Saved Businesses">
+          <i class="bi bi-heart"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       PAGE 1: HERO SECTION & QUICK SEARCH (Section 4 & 15.5)
+       ======================================================================== -->
+  <section class="page-hero relative">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="page-hero-scrim"></div>
+    <div class="page-hero-content text-center py-8">
+      
+      <!-- Eyebrow Badge (Section 15.5 - Compact, not stretched) -->
+      <div class="mb-4 flex justify-center">
+        <span class="hero-badge">
+          <i class="bi bi-shield-check text-emerald-400"></i> Certified Business Brokers & M&A Intermediaries
+        </span>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-4xl mx-auto">
+        Buy & Sell Established Businesses with <span class="text-gold-500">Confidence.</span>
+      </h1>
+
+      <!-- Supporting Text -->
+      <p class="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
+        Confidential business brokerage and certified M&A advisory. Connecting qualified acquirers with vetted profitable enterprises, certified valuations, and seamless closing guidance.
+      </p>
+
+      <!-- Side-by-Side CTAs (Section 4 & 15.4) -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <a href="buy-a-business.html" class="btn btn-primary btn-lg w-full sm:w-auto shadow-lg shadow-emerald-500/20">
+          Browse Businesses <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="sell-your-business.html" class="btn btn-outline btn-lg w-full sm:w-auto">
+          Sell Your Business <i class="bi bi-briefcase"></i>
+        </a>
+      </div>
+
+      <!-- Quick Search Widget (Section 4) -->
+      <div class="max-w-4xl mx-auto bg-[#0D1527]/95 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/10 shadow-2xl text-start">
+        <form id="home-quick-search-form" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+          
+          <div>
+            <label for="home-search-industry" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+              <i class="bi bi-grid text-emerald-400"></i> Industry
+            </label>
+            <select id="home-search-industry" class="form-select text-sm">
+              <option value="all">All Industries</option>
+              <option value="Food & Beverage">Food & Beverage</option>
+              <option value="Services">B2B & Consumer Services</option>
+              <option value="Health & Fitness">Health & Fitness</option>
+              <option value="Retail">Retail & Laundromats</option>
+              <option value="Automotive">Automotive</option>
+              <option value="Education">Education & Childcare</option>
+              <option value="E-commerce">E-commerce</option>
+              <option value="Manufacturing">Manufacturing</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="home-search-location" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+              <i class="bi bi-geo-alt text-emerald-400"></i> Location
+            </label>
+            <input type="text" id="home-search-location" data-type="location" pattern="^[A-Za-z\s,.'-]*$" title="City, State (letters and punctuation only, e.g. Austin, FL)" class="form-input text-sm" placeholder="City, State (e.g. Austin, FL)">
+          </div>
+
+          <div>
+            <label for="home-search-price" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+              <i class="bi bi-tag text-emerald-400"></i> Max Investment
+            </label>
+            <select id="home-search-price" class="form-select text-sm">
+              <option value="10000000">Any Asking Price</option>
+              <option value="500000">Under $500,000</option>
+              <option value="1000000">Under $1,000,000</option>
+              <option value="2500000">Under $2,500,000</option>
+              <option value="5000000">Under $5,000,000</option>
+            </select>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary w-full h-[46px]">
+              Search Businesses <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: ANIMATED STATISTICS COUNTERS (Section 4 & 15.4)
+       ======================================================================== -->
+  <section class="py-12 bg-[#0D1527] border-y border-white/5 relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#C79718] mb-2 stat-counter num-tabular" data-target="850" data-suffix="+">
+            850+
+          </div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-400">Businesses Sold</p>
+        </div>
+
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#C79718] mb-2 stat-counter num-tabular" data-target="420" data-prefix="$" data-suffix="M+">
+            $420M+
+          </div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-400">Transaction Volume</p>
+        </div>
+
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#C79718] mb-2 stat-counter num-tabular" data-target="12500" data-suffix="+">
+            12,500+
+          </div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-400">Active Vetted Buyers</p>
+        </div>
+
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#C79718] mb-2 stat-counter num-tabular" data-target="24" data-suffix="+">
+            24+
+          </div>
+          <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-400">Years Brokerage Experience</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3: FEATURED / AVAILABLE BUSINESS LISTINGS (Section 4)
+       ======================================================================== -->
+  <section class="pb-20 pt-0 bg-[#070B14]">
+    <!-- Full-Width White Section Header Band -->
+    <div class="section-header-band">
+      <div class="header-band-inner">
+        <span class="eyebrow-text">Confidential Marketplace</span>
+        <h2 class="section-title">Featured Business Opportunities</h2>
+        <p class="section-desc">Vetted, profitable businesses with audited financial recasts and established recurring cash flows.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Category Filter Chips (Section 15.4 - Same height active/inactive) -->
+      <div class="home-filter-chips-wrap flex flex-wrap items-center gap-2 pb-2 mb-8">
+        <button type="button" class="filter-chip home-filter-chip shrink-0 active" data-category="all">All Sectors</button>
+        <button type="button" class="filter-chip home-filter-chip shrink-0" data-category="Food & Beverage">Food & Beverage</button>
+        <button type="button" class="filter-chip home-filter-chip shrink-0" data-category="Services">Commercial Services</button>
+        <button type="button" class="filter-chip home-filter-chip shrink-0" data-category="Health & Fitness">Health & Fitness</button>
+        <button type="button" class="filter-chip home-filter-chip shrink-0" data-category="Retail">Retail</button>
+        <button type="button" class="filter-chip home-filter-chip shrink-0" data-category="Automotive">Automotive</button>
+        <button type="button" class="filter-chip home-filter-chip shrink-0" data-category="Education">Education</button>
+        <button type="button" class="filter-chip home-filter-chip shrink-0" data-category="Manufacturing">Manufacturing</button>
+      </div>
+
+      <!-- Listings Grid (Rendered via listings.js) -->
+      <div id="home-featured-listings-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Dynamic listing cards rendered here -->
+      </div>
+
+      <!-- Full Directory Link -->
+      <div class="mt-12 text-center flex items-center justify-center">
+        <a href="buy-a-business.html" class="btn btn-primary btn-lg w-full sm:w-auto">
+          View Complete Directory (24 Listings) <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: HOW IT WORKS (Section 4)
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">
+          Deal Execution Roadmap
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          How Our Brokerage Process Works
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          A disciplined 4-phase transaction methodology engineered to protect client confidentiality and achieve optimal multiples.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/5 relative group hover:border-emerald-500/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+            01
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Consult & Strategy</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            We evaluate your financial statements, calculate recasting add-backs, and determine an accurate market valuation range.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/5 relative group hover:border-emerald-500/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+            02
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Match & Blind Profile</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            We market a confidential blind profile to our 12,500+ pre-vetted buyer network. Detailed CIMs require signed electronic NDAs.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/5 relative group hover:border-emerald-500/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+            03
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Evaluate & Diligence</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            We vet proof of funds, negotiate competing Letters of Intent (LOIs), and coordinate CPA and legal due diligence rooms.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/5 relative group hover:border-emerald-500/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+            04
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Close & Transition</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            We manage SBA/bank escrow funding, closing documentation, lease assignments, and a structured handover protocol.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 6: OUR SERVICES (Section 4)
+       ======================================================================== -->
+  <section class="pb-20 pt-0 bg-[#0D1527] border-y border-white/5">
+    <!-- Full-Width White Section Header Band -->
+    <div class="section-header-band">
+      <div class="header-band-inner">
+        <span class="eyebrow-text">Practice Areas</span>
+        <h2 class="section-title">Comprehensive Brokerage & Advisory Services</h2>
+        <p class="section-desc">End-to-end guidance for business owners, corporate acquirers, and private investors seeking confidential business sales and acquisitions.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-2xl bg-[#070B14] border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Buy-Side M&A Mandates</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Targeted proprietary search, blind acquisition outreach, working capital recasting, and direct negotiation for strategic acquirers and family offices.
+            </p>
+          </div>
+          <a href="buy-a-business.html#acquirer-services" class="text-emerald-400 font-bold text-sm inline-flex items-center gap-2 hover:text-emerald-300">
+            View Acquirer Services <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#070B14] border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6">
+              <i class="bi bi-calculator"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Certified Business Valuation</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Accredited SDE and EBITDA financial recasting. Discover your realistic market value before going to market with our Certified Valuation Analysts (CVA).
+            </p>
+          </div>
+          <a href="sell-your-business.html#valuation-calculator-section" class="text-emerald-400 font-bold text-sm inline-flex items-center gap-2 hover:text-emerald-300">
+            Explore Valuation Model <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#070B14] border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6">
+              <i class="bi bi-person-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Buyer Representation</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              We locate off-market targets, analyze tax returns, structure Letters of Intent, and secure competitive SBA 7(a) acquisition financing for buyers.
+            </p>
+          </div>
+          <a href="buy-a-business.html#business-listings-section" class="text-emerald-400 font-bold text-sm inline-flex items-center gap-2 hover:text-emerald-300">
+            Browse Acquisition Targets <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#070B14] border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6">
+              <i class="bi bi-award"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Seller M&A Advisory</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Confidential marketing, creation of professional Confidential Information Memorandums (CIM), buyer pre-qualification, and maximum price negotiation.
+            </p>
+          </div>
+          <a href="sell-your-business.html#seller-multistep-section" class="text-emerald-400 font-bold text-sm inline-flex items-center gap-2 hover:text-emerald-300">
+            List Confidentially <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#070B14] border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6">
+              <i class="bi bi-file-earmark-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Due Diligence Coordination</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Structured electronic data room hosting, lease transfer reviews, UCC lien searches, inventory audits, and customer contract verification.
+            </p>
+          </div>
+          <a href="contact.html?interest=Due%20Diligence#contact-form-section" class="text-emerald-400 font-bold text-sm inline-flex items-center gap-2 hover:text-emerald-300">
+            Learn About Data Rooms <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#070B14] border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Closing & Escrow Management</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Experienced transaction coordination collaborating with closing attorneys, escrow agents, and state licensing boards for a seamless handover.
+            </p>
+          </div>
+          <a href="contact.html?interest=Advisor%20Consultation#contact-form-section" class="text-emerald-400 font-bold text-sm inline-flex items-center gap-2 hover:text-emerald-300">
+            Connect with an Advisor <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 7: WHY CHOOSE US (Section 4)
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">
+            The Vanguard Advantage
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+            Why Discerning Business Owners & Investors Choose Us
+          </h2>
+          <p class="text-slate-300 text-base mb-8 leading-relaxed">
+            Selling or acquiring an enterprise is one of the most consequential financial decisions of your lifetime. We replace uncertainty with institutional rigor, absolute confidentiality, and deep marketplace reach.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
+                <i class="bi bi-shield-shaded"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white mb-1">Ironclad Confidentiality</h4>
+                <p class="text-sm text-slate-400">Your staff, competitors, and suppliers never know the business is for sale until a vetted buyer signs a binding NDA and proof of capital is verified.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white mb-1">12,500+ Qualified Buyer Network</h4>
+                <p class="text-sm text-slate-400">Direct distribution to private equity funds, corporate strategic acquirers, high-net-worth operators, and family offices actively seeking acquisitions.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
+                <i class="bi bi-patch-check"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white mb-1">100% Vetted Listings</h4>
+                <p class="text-sm text-slate-400">Every business listed on our marketplace undergoes CPA recasting and verified lease inspection. No speculative or unverified claims.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80" alt="Corporate Boardroom Meeting" class="w-full h-[480px] object-cover">
+          </div>
+          <!-- Floating Deal Metric Card -->
+          <div class="absolute -bottom-6 -inset-inline-start-6 bg-[#0D1527] p-6 rounded-2xl border border-white/15 shadow-2xl max-w-xs">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl font-bold">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <div>
+                <span class="text-2xl font-extrabold text-white num-tabular">98.4%</span>
+                <p class="text-xs text-slate-400 font-semibold uppercase">Closing Success Rate on Listed Mandates</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 8: SUCCESS STORIES / RECENT SALES (Section 4)
+       ======================================================================== -->
+  <section class="pb-20 pt-0 bg-[#0D1527] border-y border-white/5">
+    <!-- Full-Width White Section Header Band -->
+    <div class="section-header-band">
+      <div class="header-band-inner">
+        <span class="eyebrow-text">Track Record</span>
+        <h2 class="section-title">Recently Closed Transactions</h2>
+        <p class="section-desc">A sample of recent successful business transitions facilitated by our senior advisory practice.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="card-brokerage relative">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Precision CNC Facility">
+          </div>
+          <div class="card-content">
+            <div class="mb-2">
+              <span class="badge-verified bg-rose-600 font-bold inline-flex items-center gap-1">
+                <i class="bi bi-check-all"></i> SOLD
+              </span>
+            </div>
+            <span class="text-xs font-bold text-emerald-400 uppercase">Aerospace Tooling & CNC</span>
+            <h3 class="text-lg font-bold text-white mb-2">Precision Machining Facility</h3>
+            <p class="text-xs text-slate-400 mb-4"><i class="bi bi-geo-alt"></i> Columbus, OH • 24 Employees</p>
+            <div class="space-y-1.5 p-3 rounded-xl bg-slate-900 border border-white/5 text-xs mb-4">
+              <div class="flex justify-between"><span class="text-slate-400">Sold Price:</span> <strong class="text-white num-tabular">$4,150,000</strong></div>
+              <div class="flex justify-between"><span class="text-slate-400">Multiple:</span> <strong class="text-emerald-400 font-bold">4.8x EBITDA</strong></div>
+              <div class="flex justify-between"><span class="text-slate-400">Days to Close:</span> <span class="text-slate-200">114 Days</span></div>
+            </div>
+            <p class="text-xs text-slate-300 italic">"Vanguard identified 3 competing strategic acquirers within 30 days and closed 4% above asking price."</p>
+          </div>
+        </div>
+
+        <div class="card-brokerage relative">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Commercial HVAC Contracting">
+          </div>
+          <div class="card-content">
+            <div class="mb-2">
+              <span class="badge-verified bg-rose-600 font-bold inline-flex items-center gap-1">
+                <i class="bi bi-check-all"></i> SOLD
+              </span>
+            </div>
+            <span class="text-xs font-bold text-emerald-400 uppercase">Commercial Services</span>
+            <h3 class="text-lg font-bold text-white mb-2">Commercial HVAC & Mechanical (B2B)</h3>
+            <p class="text-xs text-slate-400 mb-4"><i class="bi bi-geo-alt"></i> Charlotte, NC • 38 Employees</p>
+            <div class="space-y-1.5 p-3 rounded-xl bg-slate-900 border border-white/5 text-xs mb-4">
+              <div class="flex justify-between"><span class="text-slate-400">Sold Price:</span> <strong class="text-white num-tabular">$2,850,000</strong></div>
+              <div class="flex justify-between"><span class="text-slate-400">Multiple:</span> <strong class="text-emerald-400 font-bold">3.6x SDE</strong></div>
+              <div class="flex justify-between"><span class="text-slate-400">Days to Close:</span> <span class="text-slate-200">88 Days</span></div>
+            </div>
+            <p class="text-xs text-slate-300 italic">"Complete seller equity recapitalization executed with clean contractor license transfer and 100% staff retention."</p>
+          </div>
+        </div>
+
+        <div class="card-brokerage relative">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=800&q=80" alt="Medical Pharmacy">
+          </div>
+          <div class="card-content">
+            <div class="mb-2">
+              <span class="badge-verified bg-rose-600 font-bold inline-flex items-center gap-1">
+                <i class="bi bi-check-all"></i> SOLD
+              </span>
+            </div>
+            <span class="text-xs font-bold text-emerald-400 uppercase">Healthcare & Retail</span>
+            <h3 class="text-lg font-bold text-white mb-2">Compounding Medical Pharmacy</h3>
+            <p class="text-xs text-slate-400 mb-4"><i class="bi bi-geo-alt"></i> Scottsdale, AZ • 11 Employees</p>
+            <div class="space-y-1.5 p-3 rounded-xl bg-slate-900 border border-white/5 text-xs mb-4">
+              <div class="flex justify-between"><span class="text-slate-400">Sold Price:</span> <strong class="text-white num-tabular">$1,820,000</strong></div>
+              <div class="flex justify-between"><span class="text-slate-400">Multiple:</span> <strong class="text-emerald-400 font-bold">3.9x Cash Flow</strong></div>
+              <div class="flex justify-between"><span class="text-slate-400">Days to Close:</span> <span class="text-slate-200">128 Days</span></div>
+            </div>
+            <p class="text-xs text-slate-300 italic">"State board of pharmacy licensing transfers managed flawlessly under tight timeline."</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 9: TESTIMONIALS (Section 4)
+       ======================================================================== -->
+  <section class="pb-20 pt-0 bg-[#070B14]">
+    <!-- Full-Width White Section Header Band -->
+    <div class="section-header-band">
+      <div class="header-band-inner">
+        <span class="eyebrow-text">Client Feedback</span>
+        <h2 class="section-title">Trusted by Founders and Acquirers</h2>
+        <p class="section-desc">Read what business owners and corporate buyers have to say about working with Vanguard Advisors.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-2xl bg-[#0D1527] border border-white/5 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-4 text-sm gap-1">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              "After 28 years building my manufacturing company, I was terrified that word would get out to my suppliers. Vanguard's confidentiality protocols were immaculate. We closed in 4 months with an all-cash buyer."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+              RH
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Robert Henderson</h4>
+              <p class="text-xs text-slate-400">Former Founder, Apex Tooling ($4.2M Sale)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#0D1527] border border-white/5 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-4 text-sm gap-1">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              "When divesting our family-owned precision machining company, confidentiality was everything. Vanguard qualified 14 financial sponsors, secured 3 binding LOIs, and closed at 112% of our initial target multiple."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+              MS
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Michael Stanhope</h4>
+              <p class="text-xs text-slate-400">Former Principal, Stanhope Precision Dynamics</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#0D1527] border border-white/5 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-4 text-sm gap-1">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              "We searched for a high-cash-flow B2B commercial services business for over a year. Vanguard brought us an exclusive off-market listing, handled SBA 7(a) lender packaging, and closed in under 60 days."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+              DC
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">David Chen</h4>
+              <p class="text-xs text-slate-400">Principal, Stonegate Capital Holdings</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 10: LATEST INSIGHTS (Section 4 & 15.6 - Working Modal Reader)
+       ======================================================================== -->
+  <section class="pb-20 pt-0 bg-[#070B14] border-t border-white/5">
+    <!-- Full-Width White Section Header Band -->
+    <div class="section-header-band">
+      <div class="header-band-inner">
+        <span class="eyebrow-text">Market Intelligence</span>
+        <h2 class="section-title">Latest Brokerage & M&A Insights</h2>
+        <p class="section-desc">In-depth analysis of valuation multiples, tax-saving deal structures, and private market acquisition trends.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="card-brokerage">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Valuation Multiples">
+          </div>
+          <div class="card-content">
+            <div class="flex items-center justify-between mb-2">
+              <span class="badge-type">Valuation & M&A</span>
+              <span class="text-xs text-slate-400">October 2026 • 5 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 line-clamp-2">2026 Small Business Valuation Multiples by Sector</h3>
+            <p class="text-sm text-slate-400 mb-6 line-clamp-3">
+              Discover current EBITDA and SDE transaction multiples across HVAC, medical practices, e-commerce, and food service.
+            </p>
+            <div class="card-footer-pinned">
+              <button type="button" class="btn btn-outline w-full btn-sm btn-read-article" data-article-id="art-1">
+                Read Article <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-brokerage">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Franchising Strategy">
+          </div>
+          <div class="card-content">
+            <div class="flex items-center justify-between mb-2">
+              <span class="badge-type">Buyer Strategy</span>
+              <span class="text-xs text-slate-400">September 2026 • 6 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 line-clamp-2">Buying an Independent Business vs. Franchising: 5 Critical Factors</h3>
+            <p class="text-sm text-slate-400 mb-6 line-clamp-3">
+              A practical framework analyzing cash flow immediacy, creative freedom, royalty overhead, and brand equity.
+            </p>
+            <div class="card-footer-pinned">
+              <button type="button" class="btn btn-outline w-full btn-sm btn-read-article" data-article-id="art-2">
+                Read Article <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-brokerage">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Exit Preparation">
+          </div>
+          <div class="card-content">
+            <div class="flex items-center justify-between mb-2">
+              <span class="badge-type">Seller Advisory</span>
+              <span class="text-xs text-slate-400">September 2026 • 7 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 line-clamp-2">Preparing Your Business for a Tax-Efficient Exit in 12 Months</h3>
+            <p class="text-sm text-slate-400 mb-6 line-clamp-3">
+              How proactive EBITDA add-backs, clean financial audits, and customer diversification double your net exit take-home.
+            </p>
+            <div class="card-footer-pinned">
+              <button type="button" class="btn btn-outline w-full btn-sm btn-read-article" data-article-id="art-3">
+                Read Article <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 13: CTA BANNER (Section 4)
+       ======================================================================== -->
+  <section class="py-16 cta-banner-transition relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
+        Ready to Discuss Your Business Transition?
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-8">
+        Whether you are planning an exit in 12 months or seeking your next acquisition target, our certified brokers are ready to advise you.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button type="button" class="btn btn-primary btn-lg w-full sm:w-auto btn-open-consultation-modal">
+          Schedule Confidential Consultation <i class="bi bi-calendar-event"></i>
+        </button>
+        <a href="buy-a-business.html" class="btn btn-outline btn-lg w-full sm:w-auto">
+          Explore Available Businesses <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 14: REUSABLE FOOTER (Section 15.6 - Identical on every page)
+       ======================================================================== -->
+  <footer class="bg-black text-slate-300 text-sm border-t border-white/10 mt-auto site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-3 mb-4 group">
+            <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+              <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-white tracking-tight leading-tight">
+                VANGUARD <span class="text-[#C79718]">BROKERS</span>
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+                Business Brokerage & M&A Advisory
+              </span>
+            </div>
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4 max-w-sm">
+            Institutional business brokerage and M&A advisory practice. Vetted listings, certified business valuations, and confidential deal execution nationwide.
+          </p>
+          <div class="mb-5">
+            <span class="badge-ibba-member">
+              <i class="bi bi-shield-check"></i>
+              <span>IBBA & M&A Source Member</span>
+            </span>
+          </div>
+          <div class="flex items-center gap-3 text-slate-400">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Navigation</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a></li>
+            <li><a href="buy-a-business.html" class="hover:text-emerald-400 transition-colors">Buy</a></li>
+            <li><a href="sell-your-business.html" class="hover:text-emerald-400 transition-colors">Sell</a></li>
+            <li><a href="about.html" class="hover:text-emerald-400 transition-colors">About</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Advisory Desk (Replaces Top Sectors) -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Advisory Desk</h4>
+          <div class="space-y-3 text-xs leading-relaxed">
+            <p class="flex items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>555 Congress Ave, Suite 2100<br>Austin, TX 78701</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="bi bi-telephone-fill text-emerald-400 shrink-0"></i>
+              <span>+1 (800) 826-4827</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="bi bi-envelope-fill text-emerald-400 shrink-0"></i>
+              <span>advisory@vanguardbrokers.com</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Deal Flow Digest</h4>
+          <p class="text-xs text-slate-400 mb-3">
+            Subscribe for monthly off-market acquisitions and proprietary deal flow.
+          </p>
+          <form class="newsletter-form space-y-2">
+            <input type="email" class="form-input text-xs py-2" placeholder="Your business email" required>
+            <button type="submit" class="btn btn-primary w-full btn-sm">
+              Subscribe <i class="bi bi-send"></i>
+            </button>
+          </form>
+          <p class="text-[11px] text-slate-500 mt-2">No spam. Unsubscribe anytime.</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div>
+          &copy; 2026 <span class="text-white font-bold">Vanguard Business Brokers & M&A Advisory</span> All rights reserved
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="404.html" class="hover:text-white transition-colors">404 Error</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SHARED GLOBAL MODALS (Section 4 & 15.7)
+       ======================================================================== -->
+  
+  <!-- 1. Book a Consultation Modal -->
+  <div id="modal-consultation" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Confidential Session</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Book a Free Consultation</h3>
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-2xl" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <form id="modal-consultation-form" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-name" class="block text-xs font-semibold text-slate-300 mb-1">Full Name *</label>
+            <input type="text" id="consult-name" data-type="name" pattern="^[A-Za-z\s'.-]{2,}$" title="Full legal name (letters only, no numbers)" class="form-input text-sm" placeholder="Johnathan Doe" required>
+          </div>
+          <div>
+            <label for="consult-email" class="block text-xs font-semibold text-slate-300 mb-1">Work Email *</label>
+            <input type="email" id="consult-email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Valid email address (e.g. name@company.com)" class="form-input text-sm" placeholder="john@company.com" required>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-phone" class="block text-xs font-semibold text-slate-300 mb-1">Phone Number *</label>
+            <input type="tel" id="consult-phone" pattern="[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]{6,15}" title="Valid phone number (digits only)" class="form-input text-sm" placeholder="+1 (555) 019-2834" required>
+          </div>
+          <div>
+            <label for="consult-topic" class="block text-xs font-semibold text-slate-300 mb-1">Topic of Consultation *</label>
+            <select id="consult-topic" class="form-select text-sm" required>
+              <option value="Selling My Business">Selling My Business (Valuation & Exit)</option>
+              <option value="Buying an Existing Business">Buying an Existing Business</option>
+              <option value="Franchise Opportunity Consulting">Franchise Opportunity Consulting</option>
+              <option value="Merger & Acquisition Advisory">M&A & Deal Structuring</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-date" class="block text-xs font-semibold text-slate-300 mb-1">Preferred Date *</label>
+            <input type="date" id="consult-date" class="form-input text-sm" required>
+          </div>
+          <div>
+            <label for="consult-time" class="block text-xs font-semibold text-slate-300 mb-1">Preferred Time Slot *</label>
+            <select id="consult-time" class="form-select text-sm" required>
+              <option value="09:00 AM - 10:00 AM EST">09:00 AM - 10:00 AM EST</option>
+              <option value="11:00 AM - 12:00 PM EST">11:00 AM - 12:00 PM EST</option>
+              <option value="02:00 PM - 03:00 PM EST">02:00 PM - 03:00 PM EST</option>
+              <option value="04:00 PM - 05:00 PM EST">04:00 PM - 05:00 PM EST</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="consult-advisor" class="block text-xs font-semibold text-slate-300 mb-1">Advisor Preference (Optional)</label>
+          <select id="consult-advisor" class="form-select text-sm">
+            <option value="First Available Senior Broker">First Available Senior Broker</option>
+            <option value="Marcus Sterling, CBI">Marcus Sterling, CBI (Industrial & M&A)</option>
+            <option value="Elena Rostova, CVA">Elena Rostova, CVA (Valuation)</option>
+            <option value="Julian Thorne">Julian Thorne (Franchise Development)</option>
+            <option value="Victoria Brooks, M&AMI">Victoria Brooks (Healthcare & Retail)</option>
+          </select>
+        </div>
+
+        <p class="text-xs text-slate-400">
+          All consultations are held under strict confidential attorney-broker privilege. No public records are created.
+        </p>
+
+        <div class="pt-2">
+          <button type="submit" class="btn btn-primary w-full">
+            Confirm Consultation <i class="bi bi-calendar-check"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Saved Listings Modal -->
+  <div id="modal-saved-listings" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Your Portfolio</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Saved Businesses</h3>
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-2xl" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div id="saved-listings-list-container" class="max-h-[60vh] overflow-y-auto pr-1">
+        <!-- Rendered via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Listing Details Modal -->
+  <div id="modal-listing-details" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-4xl">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div id="modal-listing-badge-wrap" class="flex flex-wrap items-center gap-2">
+          <!-- Dynamic badges -->
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-2xl" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <h2 id="modal-listing-title" class="text-2xl sm:text-3xl font-extrabold text-white mb-6">Listing Title</h2>
+
+      <!-- Gallery -->
+      <div class="mb-6">
+        <div class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden bg-slate-800 mb-3 border border-white/10">
+          <img id="modal-listing-main-img" src="" alt="Main photo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80';">
+        </div>
+        <div id="modal-listing-thumbs" class="flex items-center gap-3 overflow-x-auto pb-2">
+          <!-- Thumbnails -->
+        </div>
+      </div>
+
+      <!-- Financial Metrics Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-2xl bg-slate-900 border border-white/10 mb-6 text-center">
+        <div>
+          <span class="text-xs text-slate-400 uppercase font-semibold block">Asking Price</span>
+          <strong id="modal-listing-price" class="text-xl font-extrabold text-white num-tabular">$0</strong>
+        </div>
+        <div>
+          <span class="text-xs text-slate-400 uppercase font-semibold block">Net Cash Flow (SDE)</span>
+          <strong id="modal-listing-profit" class="text-xl font-extrabold text-emerald-400 num-tabular">$0</strong>
+        </div>
+        <div>
+          <span class="text-xs text-slate-400 uppercase font-semibold block">Annual Gross Revenue</span>
+          <strong id="modal-listing-revenue" class="text-xl font-bold text-slate-200 num-tabular">$0</strong>
+        </div>
+        <div>
+          <span class="text-xs text-slate-400 uppercase font-semibold block">Year Established</span>
+          <strong id="modal-listing-established" class="text-base font-bold text-slate-200">2018</strong>
+        </div>
+      </div>
+
+      <!-- Description & Operational Highlights -->
+      <div class="space-y-4 mb-8 text-sm">
+        <div>
+          <h4 class="text-white font-bold text-base mb-2">Executive Overview</h4>
+          <p id="modal-listing-desc" class="text-slate-300 leading-relaxed"></p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-base mb-2">Investment Highlights</h4>
+          <ul id="modal-listing-highlights" class="space-y-2"></ul>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-white/10">
+          <div>
+            <span class="text-xs font-bold text-slate-400 uppercase block">Facility & Location</span>
+            <p id="modal-listing-facility" class="text-slate-200 mt-1"></p>
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-400 uppercase block">Lease Terms</span>
+            <p id="modal-listing-lease" class="text-slate-200 mt-1"></p>
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-400 uppercase block">Inventory & FF&E</span>
+            <p id="modal-listing-inventory" class="text-slate-200 mt-1"></p>
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-400 uppercase block">Reason for Sale</span>
+            <p id="modal-listing-reason" class="text-slate-200 mt-1"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Request Full NDA Form Section -->
+      <div class="p-6 rounded-2xl bg-[#070B14] border border-white/10 mb-6">
+        <h4 class="text-white font-bold text-lg mb-1 flex items-center gap-2">
+          <i class="bi bi-shield-lock-fill text-emerald-400"></i> Request Full CIM & Financial Disclosures
+        </h4>
+        <p class="text-xs text-slate-400 mb-4">
+          Electronic NDA execution is required by seller representation guidelines prior to revealing proprietary supplier records, leases, and recasted tax schedules.
+        </p>
+
+        <form id="form-request-nda" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="hidden" id="nda-listing-id" value="">
+          <div>
+            <label for="nda-name" class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name *</label>
+            <input type="text" id="nda-name" class="form-input text-xs" required placeholder="Alex Morgan">
+          </div>
+          <div>
+            <label for="nda-email" class="block text-xs font-semibold text-slate-300 mb-1">Direct Business Email *</label>
+            <input type="email" id="nda-email" class="form-input text-xs" required placeholder="alex@capital.com">
+          </div>
+          <div>
+            <label for="nda-phone" class="block text-xs font-semibold text-slate-300 mb-1">Mobile Phone *</label>
+            <input type="tel" id="nda-phone" class="form-input text-xs" required placeholder="+1 (555) 234-5678">
+          </div>
+          <div>
+            <label for="nda-funds" class="block text-xs font-semibold text-slate-300 mb-1">Verified Liquid Capital *</label>
+            <select id="nda-funds" class="form-select text-xs" required>
+              <option value="$100,000 - $250,000">$100,000 - $250,000</option>
+              <option value="$250,000 - $500,000">$250,000 - $500,000</option>
+              <option value="$500,000 - $1,000,000">$500,000 - $1,000,000</option>
+              <option value="$1,000,000+">$1,000,000+ (Institutional / PE)</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" class="btn btn-primary w-full btn-sm">
+              Submit Electronic NDA & Request CIM <i class="bi bi-shield-lock-fill"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Action Footer -->
+      <div class="flex items-center justify-between pt-4 border-t border-white/10">
+        <button type="button" id="modal-listing-share-btn" class="btn btn-outline btn-sm">
+          <i class="bi bi-share"></i> Share Listing
+        </button>
+        <a id="modal-listing-enquire-btn" href="contact.html" class="btn btn-primary btn-sm">
+          Direct Broker Enquiry <i class="bi bi-chat-text"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. Article Reader Modal -->
+  <div id="modal-article-reader" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-3xl">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <span id="modal-article-meta" class="text-xs font-bold text-emerald-400 uppercase tracking-wider"></span>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-2xl" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <h2 id="modal-article-title" class="text-2xl sm:text-3xl font-extrabold text-white mb-6"></h2>
+
+      <div class="w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-6 bg-slate-800">
+        <img id="modal-article-img" src="" alt="Article cover" class="w-full h-full object-cover">
+      </div>
+
+      <div id="modal-article-content" class="text-slate-300 text-sm sm:text-base space-y-4 leading-relaxed mb-6"></div>
+
+      <div class="pt-4 border-t border-white/10 text-end">
+        <button type="button" class="btn btn-outline btn-sm btn-close-modal">
+          Close Article
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Confirmation Success Modal -->
+  <div id="modal-confirmation" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-md text-center">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4 border border-emerald-500/40">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <h3 id="confirmation-modal-title" class="text-2xl font-bold text-white mb-2">Request Transmitted</h3>
+      <div id="confirmation-modal-ref" class="inline-block px-3 py-1 rounded-full bg-slate-800 border border-white/10 text-xs font-mono text-emerald-400 mb-4">
+        Reference ID: VNG-0000
+      </div>
+      <p id="confirmation-modal-message" class="text-slate-300 text-sm mb-6 leading-relaxed">
+        Your submission has been securely processed.
+      </p>
+      <button type="button" class="btn btn-primary w-full btn-close-modal">
+        Done <i class="bi bi-check2"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button (Section 15.8) -->
+  <button type="button" class="back-to-top" aria-label="Back to top of page">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Core JavaScript Libraries -->
+  <script src="assets/js/listings.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Deal Room Coming Soon | Vanguard Brokers</title>
+  <meta name="description" content="Vanguard Institutional Private Deal Room launching soon. Secure virtual data rooms, AI-powered deal matching, and electronic escrow integrations.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            emerald: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            gold: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="bg-[#070B14] text-slate-100 antialiased flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="site-header flex items-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl w-full mx-auto flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-[#C79718] rounded-lg">
+        <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg font-extrabold tracking-tight text-white leading-tight">
+            VANGUARD <span class="text-[#C79718]">BROKERS</span>
+          </span>
+          <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+            Business Brokerage & M&A Advisory
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav hidden lg:flex items-center gap-6 xl:gap-8">
+        <div class="relative nav-dropdown-wrapper group">
+          <a href="index.html" class="nav-link nav-dropdown-trigger flex items-center gap-1.5" id="home-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span class="nav-link-text">Home</span>
+            <i class="bi bi-chevron-down dropdown-chevron text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+          </a>
+          <div class="nav-dropdown-menu absolute top-full inset-inline-start-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-[1050]">
+            <div class="nav-dropdown-card">
+              <a href="index.html" class="nav-dropdown-item">
+                <span>Business Brokerage</span>
+              </a>
+              <a href="home-2.html" class="nav-dropdown-item">
+                <span>Franchise</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="buy-a-business.html" class="nav-link">Buy</a>
+        <a href="sell-your-business.html" class="nav-link">Sell</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal relative hidden lg:inline-flex" title="Saved Businesses">
+          <i class="bi bi-heart"></i>
+          <span class="saved-counter-badge absolute -top-1.5 -inset-inline-end-1.5 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-bold flex items-center justify-center hidden">0</span>
+        </button>
+        <button type="button" class="btn-icon-toggle theme-toggle-btn hidden lg:inline-flex" title="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn hidden lg:inline-flex" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-sm sm:btn-md btn-open-consultation-modal hidden lg:inline-flex">
+          Free Consultation <i class="bi bi-calendar-event"></i>
+        </button>
+        <button type="button" id="btn-mobile-menu-toggle" class="hamburger-btn btn-icon-toggle lg:hidden" aria-label="Open menu">
+          <i class="bi bi-list text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-nav-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[2000] hidden lg:hidden"></div>
+  <aside id="mobile-nav-drawer" class="lg:hidden fixed top-0 bottom-0 w-[85%] max-w-sm bg-[#0D1527] border-e border-white/10 z-[2010] p-6 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-extrabold text-white tracking-tight leading-tight">VANGUARD <span class="text-[#C79718]">BROKERS</span></span>
+            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">Business Brokerage & M&A Advisory</span>
+          </div>
+        </a>
+        <button type="button" id="btn-close-mobile-menu" class="text-slate-400 hover:text-white text-2xl p-1">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-3">
+        <!-- Mobile Home Dropdown Group -->
+        <div class="border-b border-white/5 pb-2">
+          <button type="button" class="mobile-dropdown-toggle w-full text-lg font-bold flex items-center justify-between text-slate-200 hover:text-emerald-400 focus:outline-none py-2" aria-expanded="false" data-target="mobile-home-submenu">
+            <span class="flex items-center gap-2">Home</span>
+            <i class="bi bi-chevron-down text-sm transition-transform duration-200 mobile-submenu-chevron"></i>
+          </button>
+          <div id="mobile-home-submenu" class="ps-3 space-y-1 mt-1 hidden">
+            <a href="index.html" class="flex items-center gap-2.5 py-2 text-sm font-medium text-slate-300 hover:text-white">
+              <span>Business Brokerage</span>
+            </a>
+            <a href="home-2.html" class="flex items-center gap-2.5 py-2 text-sm font-medium text-slate-300 hover:text-white">
+              <span>Franchise</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="buy-a-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Buy</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="sell-your-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Sell</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="about.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>About</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="contact.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Contact</span> <i class="bi bi-arrow-right"></i>
+        </a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-white/10 space-y-3">
+      <button type="button" class="btn btn-primary w-full btn-open-consultation-modal">
+        Book Free Consultation <i class="bi bi-calendar-event"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Hero (Same Height) -->
+  <section class="page-hero relative">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="page-hero-scrim"></div>
+    <div class="page-hero-content text-center py-8">
+      
+      <span class="hero-badge mb-4">
+        <i class="bi bi-stars text-emerald-400"></i> Next-Gen M&A Infrastructure
+      </span>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-4xl mx-auto">
+        Private Institutional <span class="text-emerald-400">Deal Room</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+        We are building a secure digital deal room featuring automated electronic NDA execution, algorithmic buyer-seller matching, and encrypted escrow milestone tracking.
+      </p>
+
+      <!-- Live Countdown Timer -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-lg mx-auto mb-10 text-center">
+        <div class="p-4 rounded-2xl bg-[#0D1527]/90 border border-white/10 backdrop-blur">
+          <span id="countdown-days" class="text-3xl sm:text-4xl font-extrabold text-white block num-tabular">42</span>
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Days</span>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#0D1527]/90 border border-white/10 backdrop-blur">
+          <span id="countdown-hours" class="text-3xl sm:text-4xl font-extrabold text-white block num-tabular">18</span>
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Hours</span>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#0D1527]/90 border border-white/10 backdrop-blur">
+          <span id="countdown-minutes" class="text-3xl sm:text-4xl font-extrabold text-white block num-tabular">25</span>
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Minutes</span>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#0D1527]/90 border border-white/10 backdrop-blur">
+          <span id="countdown-seconds" class="text-3xl sm:text-4xl font-extrabold text-emerald-400 block num-tabular">40</span>
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Seconds</span>
+        </div>
+      </div>
+
+      <!-- Priority Access Form -->
+      <div class="max-w-md mx-auto">
+        <form class="newsletter-form flex flex-col sm:flex-row gap-2">
+          <input type="email" class="form-input text-sm" placeholder="Enter corporate email for early access..." required>
+          <button type="submit" class="btn btn-primary shrink-0">
+            Notify Me <i class="bi bi-bell"></i>
+          </button>
+        </form>
+        <p class="text-xs text-slate-400 mt-2">Private equity principals and certified brokers receive VIP beta onboarding.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-slate-300 text-sm border-t border-white/10 mt-auto site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div>&copy; 2026 <a href="index.html" class="text-white hover:text-emerald-400 font-bold">Vanguard Business Brokers & Franchise Advisors</a> All rights reserved</div>
+        <div class="flex items-center gap-6">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="404.html" class="hover:text-white transition-colors">404 Error</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals & Scripts -->
+  <div id="modal-saved-listings" class="modal-backdrop">
+    <div class="modal-dialog p-6 max-w-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+        <h3 class="text-lg font-bold text-white">Saved Businesses</h3>
+        <button class="btn-close-modal text-slate-400 hover:text-white text-xl"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div id="saved-listings-list-container"></div>
+    </div>
+  </div>
+
+  <button type="button" class="back-to-top" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="assets/js/listings.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Simple countdown script -->
+  <script>
+    (function() {
+      const targetDate = new Date().getTime() + (42 * 24 * 60 * 60 * 1000) + (18 * 60 * 60 * 1000);
+      function updateTimer() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+        if (diff <= 0) return;
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((diff % (1000 * 60)) / 1000);
+        const daysEl = document.getElementById('countdown-days');
+        const hoursEl = document.getElementById('countdown-hours');
+        const minsEl = document.getElementById('countdown-minutes');
+        const secsEl = document.getElementById('countdown-seconds');
+        if (daysEl) daysEl.textContent = d;
+        if (hoursEl) hoursEl.textContent = h;
+        if (minsEl) minsEl.textContent = m;
+        if (secsEl) secsEl.textContent = s;
+      }
+      setInterval(updateTimer, 1000);
+      updateTimer();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | The Vanguard Standard in M&A Brokerage & Advisory</title>
+  <meta name="description" content="Learn about Vanguard Business Brokers & Franchise Advisors. Over 24 years of institutional M&A experience, $420M+ in closed transactions, and certified business valuations.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            emerald: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            },
+            gold: {
+              50: '#FDFBF7',
+              100: '#FAF3E3',
+              200: '#F4E5BF',
+              300: '#EBD394',
+              400: '#DFBA63',
+              500: '#C5A059',
+              600: '#A88438',
+              700: '#8A6A25',
+              800: '#674E18',
+              900: '#42320D',
+              950: '#231904'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="bg-[#070B14] text-slate-100 antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================================
+       STICKY NAVBAR
+       ======================================================================== -->
+  <header class="site-header flex items-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl w-full mx-auto flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group focus:outline-none focus:ring-2 focus:ring-[#C79718] rounded-lg">
+        <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg font-extrabold tracking-tight text-white flex items-center gap-1 leading-tight">
+            VANGUARD <span class="text-[#C79718]">BROKERS</span>
+          </span>
+          <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+            Business Brokerage & M&A Advisory
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav hidden lg:flex items-center gap-6 xl:gap-8">
+        <div class="relative nav-dropdown-wrapper group">
+          <a href="index.html" class="nav-link nav-dropdown-trigger flex items-center gap-1.5" id="home-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span class="nav-link-text">Home</span>
+            <i class="bi bi-chevron-down dropdown-chevron text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+          </a>
+          <div class="nav-dropdown-menu absolute top-full inset-inline-start-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto z-[1050]">
+            <div class="nav-dropdown-card">
+              <a href="index.html" class="nav-dropdown-item">
+                <span>Business Brokerage</span>
+              </a>
+              <a href="home-2.html" class="nav-dropdown-item">
+                <span>Franchise</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="buy-a-business.html" class="nav-link">Buy</a>
+        <a href="sell-your-business.html" class="nav-link">Sell</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action Controls & CTAs -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <!-- Saved Favorites Trigger -->
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal relative hidden lg:inline-flex" title="Saved Businesses" aria-label="View saved businesses">
+          <i class="bi bi-heart"></i>
+          <span class="saved-counter-badge absolute -top-1.5 -inset-inline-end-1.5 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-bold flex items-center justify-center hidden">0</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button type="button" class="btn-icon-toggle theme-toggle-btn hidden lg:inline-flex" title="Toggle Dark/Light Mode" aria-label="Toggle dark/light theme">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+
+        <!-- RTL Toggle -->
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn hidden lg:inline-flex" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+
+        <!-- Primary CTA Button -->
+        <button type="button" class="btn btn-primary btn-sm sm:btn-md btn-open-consultation-modal hidden lg:inline-flex">
+          Free Consultation <i class="bi bi-calendar-event"></i>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" id="btn-mobile-menu-toggle" class="hamburger-btn btn-icon-toggle lg:hidden" aria-label="Open navigation menu">
+          <i class="bi bi-list text-2xl"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Slide-out Menu -->
+  <div id="mobile-nav-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[2000] hidden lg:hidden"></div>
+  <aside id="mobile-nav-drawer" class="lg:hidden fixed top-0 bottom-0 w-[85%] max-w-sm bg-[#0D1527] border-e border-white/10 z-[2010] p-6 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-extrabold text-white tracking-tight leading-tight">VANGUARD <span class="text-[#C79718]">BROKERS</span></span>
+            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">Business Brokerage & M&A Advisory</span>
+          </div>
+        </a>
+        <button type="button" id="btn-close-mobile-menu" class="text-slate-400 hover:text-white text-2xl p-1" aria-label="Close menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-3">
+        <!-- Mobile Home Dropdown Group -->
+        <div class="border-b border-white/5 pb-2">
+          <button type="button" class="mobile-dropdown-toggle w-full text-lg font-bold flex items-center justify-between text-slate-200 hover:text-emerald-400 focus:outline-none py-2" aria-expanded="false" data-target="mobile-home-submenu">
+            <span class="flex items-center gap-2">Home</span>
+            <i class="bi bi-chevron-down text-sm transition-transform duration-200 mobile-submenu-chevron"></i>
+          </button>
+          <div id="mobile-home-submenu" class="ps-3 space-y-1 mt-1 hidden">
+            <a href="index.html" class="flex items-center gap-2.5 py-2 text-sm font-medium text-slate-300 hover:text-white">
+              <span>Business Brokerage</span>
+            </a>
+            <a href="home-2.html" class="flex items-center gap-2.5 py-2 text-sm font-medium text-slate-300 hover:text-white">
+              <span>Franchise</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="buy-a-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Buy</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="sell-your-business.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Sell</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="about.html" class="text-emerald-400 font-bold text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>About</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="contact.html" class="text-slate-200 hover:text-emerald-400 font-medium text-lg py-2 flex items-center justify-between border-b border-white/5">
+          <span>Contact</span> <i class="bi bi-arrow-right"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-white/10 space-y-3">
+      <button type="button" class="btn btn-primary w-full btn-open-consultation-modal">
+        Book Free Consultation <i class="bi bi-calendar-event"></i>
+      </button>
+      <div class="flex items-center justify-around pt-2">
+        <button type="button" class="btn-icon-toggle theme-toggle-btn" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill text-amber-500"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+          <i class="bi bi-arrow-left-right text-base"></i>
+        </button>
+        <button type="button" class="btn-icon-toggle btn-open-saved-modal" title="Saved Businesses">
+          <i class="bi bi-heart"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       PAGE HERO: ABOUT US
+       ======================================================================== -->
+  <section class="page-hero relative">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="page-hero-scrim"></div>
+    <div class="page-hero-content text-center py-12">
+      
+      <!-- Breadcrumbs -->
+      <nav class="flex items-center justify-center gap-2 text-xs text-slate-400 mb-6 uppercase tracking-wider font-semibold" aria-label="Breadcrumb">
+        <a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a>
+        <span class="text-slate-600">/</span>
+        <span class="text-emerald-400">About</span>
+      </nav>
+
+      <!-- Eyebrow Badge -->
+      <div class="mb-4 flex justify-center">
+        <span class="hero-badge">
+          <i class="bi bi-patch-check-fill text-emerald-400"></i> Founded 2002 • 24 Years of Institutional M&A Excellence
+        </span>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-4xl mx-auto">
+        Built on Discretion. Driven by <span class="text-gold-500">Valuation Precision.</span>
+      </h1>
+
+      <!-- Supporting Text -->
+      <p class="text-base sm:text-lg lg:text-xl text-slate-300 max-w-3xl mx-auto mb-8 font-normal leading-relaxed">
+        We bridge the divide between founder-led businesses and private capital. Delivering Wall Street caliber financial recasting, airtight blind confidentiality, and high-probability transaction closures nationwide.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <button type="button" class="btn btn-primary btn-lg btn-open-consultation-modal">
+          Schedule Confidential Meeting <i class="bi bi-calendar-event"></i>
+        </button>
+        <a href="contact.html" class="btn btn-outline btn-lg">
+          Meet Our Intermediaries <i class="bi bi-arrow-down"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       OUR STORY & FOUNDING MANIFESTO
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Narrative -->
+        <div class="lg:col-span-7 space-y-6 text-start">
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block">Our Heritage</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
+            Why We Founded Vanguard: Eliminating Predatory Upfront Fees and Careless Leaks.
+          </h2>
+          <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              In 2002, our founding partners—former corporate M&A attorneys and seasoned business intermediaries—observed a deeply broken business brokerage industry. Traditional brokers routinely charged exorbitant upfront marketing retainers, listed businesses with unrealistic multiples, and leaked confidential operational data that damaged seller reputations with staff, vendors, and competitors.
+            </p>
+            <p>
+              Vanguard was established on a radical, fiduciary premise: <strong class="text-white font-semibold">100% performance alignment</strong>. We charge zero upfront retainers on qualified mandates. We prepare certified, defensible Seller’s Discretionary Earnings (SDE) recasts, and we protect every client with a strict two-tier blind marketing protocol.
+            </p>
+            <p>
+              Over the last two decades, this commitment has driven over <strong class="text-emerald-400 font-semibold">$420,000,000 in closed transaction volume</strong> across 850+ completed acquisitions and franchise syndications.
+            </p>
+          </div>
+
+          <div class="pt-4 flex flex-wrap items-center gap-6">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold text-lg">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="text-xs">
+                <span class="text-white font-bold block">100% Confidential</span>
+                <span class="text-slate-400">Zero Identity Exposure</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center font-bold text-lg">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div class="text-xs">
+                <span class="text-white font-bold block">Certified Valuation</span>
+                <span class="text-slate-400">NACVA & CBI Standards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Institutional Highlights Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-[#0D1527] rounded-3xl border border-white/10 p-8 shadow-2xl relative">
+            <div class="text-center pb-6 border-b border-white/10 mb-6">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 block mb-1">Cumulative Track Record</span>
+              <div class="stat-counter text-5xl font-black text-white font-mono tracking-tight" data-target="420" data-prefix="$" data-suffix="M+">$420M+</div>
+              <span class="text-xs text-slate-400">Total Transaction Value Closed</span>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-xs text-slate-300 font-medium">Exclusive Mandate Close Ratio</span>
+                <span class="stat-counter text-base font-extrabold text-emerald-400 font-mono" data-target="94.2" data-suffix="%" data-decimals="1">94.2%</span>
+              </div>
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-xs text-slate-300 font-medium">Businesses & Franchises Sold</span>
+                <span class="stat-counter text-base font-extrabold text-white font-mono" data-target="850" data-suffix="+">850+</span>
+              </div>
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-xs text-slate-300 font-medium">Average Time to First Qualified LOI</span>
+                <span class="stat-counter text-base font-extrabold text-gold-400 font-mono" data-target="14" data-suffix=" Days">14 Days</span>
+              </div>
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-xs text-slate-300 font-medium">Vetted Buyer Network (Proof of Funds)</span>
+                <span class="stat-counter text-base font-extrabold text-white font-mono" data-target="12500" data-suffix="+">12,500+</span>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/10 text-center">
+              <button type="button" class="btn btn-primary w-full btn-open-consultation-modal">
+                Request Introductory Broker Call <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       OUR 4 CORE PILLARS
+       ======================================================================== -->
+  <section class="py-20 bg-[#0D1527] border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Our Operating Principles</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">The Four Vanguard Fiduciary Pillars</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+          Every partner, valuation analyst, and deal coordinator operates strictly under our institutional code of representation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        
+        <!-- Pillar 1 -->
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/10 hover:border-[#C79718]/40 transition-all flex flex-col justify-between h-full group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 flex items-center justify-center text-2xl mb-4 shrink-0">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 min-h-[3.25rem] flex items-center">Absolute Confidentiality</h3>
+            <p class="text-xs text-slate-300 leading-relaxed min-h-[4.5rem]">
+              Your employees, competitors, and suppliers never discover that your business is on the market. All initial marketing is strictly blind. Full disclosures require executed NDAs and verified proof of liquid funds.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/10 hover:border-[#C79718]/40 transition-all flex flex-col justify-between h-full group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 flex items-center justify-center text-2xl mb-4 shrink-0">
+              <i class="bi bi-calculator-fill"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 min-h-[3.25rem] flex items-center">Valuation Precision</h3>
+            <p class="text-xs text-slate-300 leading-relaxed min-h-[4.5rem]">
+              We don’t guess asking prices. We perform forensic recasting of tax returns and P&Ls to extract normalized Seller’s Discretionary Earnings (SDE), defending your enterprise multiple with institutional comparables.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/10 hover:border-[#C79718]/40 transition-all flex flex-col justify-between h-full group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 flex items-center justify-center text-2xl mb-4 shrink-0">
+              <i class="bi bi-hand-thumbs-up-fill"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 min-h-[3.25rem] flex items-center">Zero Upfront Retainers</h3>
+            <p class="text-xs text-slate-300 leading-relaxed min-h-[4.5rem]">
+              Unlike fee-churning consultancies, our revenue is tied 100% to successfully closing your sale at or above valuation. If your transaction does not close, you owe us nothing for marketing, CIM preparation, or buyer vetting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="p-6 rounded-2xl bg-[#0D1527] border border-white/10 hover:border-[#C79718]/40 transition-all flex flex-col justify-between h-full group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 flex items-center justify-center text-2xl mb-4 shrink-0">
+              <i class="bi bi-person-check-fill"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 min-h-[3.25rem] flex items-center">Pre-Vetted Liquidity</h3>
+            <p class="text-xs text-slate-300 leading-relaxed min-h-[4.5rem]">
+              We prevent tire-kickers and unqualified browsers from wasting your time. Every prospective buyer undergoes banking verification, credit solvency reviews, and criminal background checks prior to scheduling calls.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       HISTORICAL MILESTONES TIMELINE
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-gold-400 block mb-2">Our Evolution</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Two Decades of Transaction Milestones</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-xl mx-auto">
+          From a boutique Austin advisory practice to a nationwide private market M&A firm.
+        </p>
+      </div>
+
+      <!-- Interactive Connected Timeline Container (Animates and connects on scroll) -->
+      <div id="timeline-interactive-container" class="timeline-interactive-wrapper relative max-w-4xl mx-auto py-6">
+        
+        <!-- Central Background Track Line -->
+        <div class="timeline-track-bg" aria-hidden="true"></div>
+
+        <!-- Animated Scroll Progress Beam (Connects the gold ticks as you scroll) -->
+        <div id="timeline-progress-bar" class="timeline-progress-bar" aria-hidden="true">
+          <div class="timeline-progress-glow-head"></div>
+        </div>
+
+        <div class="space-y-12 sm:space-y-16 relative z-10">
+          
+          <!-- Milestone 1: 2002 -->
+          <div class="timeline-row relative flex items-center justify-between" data-milestone="1">
+            <div class="w-5/12 text-right pr-6 sm:pr-10 timeline-content-left">
+              <span class="text-xs font-mono font-bold text-gold-400 block mb-1">2002</span>
+              <h4 class="text-lg sm:text-xl font-bold text-white mb-1.5 transition-colors duration-300">Founding in Austin, Texas</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Established by Alexander Vance to advise high-growth industrial and B2B services founders.</p>
+            </div>
+            
+            <div class="timeline-node-wrapper shrink-0 z-20 flex items-center justify-center">
+              <div class="timeline-node timeline-tick" data-node-index="1">
+                <i class="bi bi-check-lg text-black font-black text-base"></i>
+                <div class="timeline-node-ring"></div>
+              </div>
+            </div>
+            
+            <div class="w-5/12 pl-6 sm:pl-10"></div>
+          </div>
+
+          <!-- Milestone 2: 2008 -->
+          <div class="timeline-row relative flex items-center justify-between" data-milestone="2">
+            <div class="w-5/12 text-right pr-6 sm:pr-10"></div>
+            
+            <div class="timeline-node-wrapper shrink-0 z-20 flex items-center justify-center">
+              <div class="timeline-node timeline-tick" data-node-index="2">
+                <i class="bi bi-check-lg text-black font-black text-base"></i>
+                <div class="timeline-node-ring"></div>
+              </div>
+            </div>
+            
+            <div class="w-5/12 pl-6 sm:pl-10 text-left timeline-content-right">
+              <span class="text-xs font-mono font-bold text-gold-400 block mb-1">2008</span>
+              <h4 class="text-lg sm:text-xl font-bold text-white mb-1.5 transition-colors duration-300">Launch of Franchise Advisory Practice</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Integrated multi-unit retail, QSR, and fitness franchise syndication across 18 regional markets.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 3: 2015 -->
+          <div class="timeline-row relative flex items-center justify-between" data-milestone="3">
+            <div class="w-5/12 text-right pr-6 sm:pr-10 timeline-content-left">
+              <span class="text-xs font-mono font-bold text-gold-400 block mb-1">2015</span>
+              <h4 class="text-lg sm:text-xl font-bold text-white mb-1.5 transition-colors duration-300">Surpassed $150M Closed Volume</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Expanded advisory desks into New York and Miami, serving family offices and lower middle-market funds.</p>
+            </div>
+            
+            <div class="timeline-node-wrapper shrink-0 z-20 flex items-center justify-center">
+              <div class="timeline-node timeline-tick" data-node-index="3">
+                <i class="bi bi-check-lg text-black font-black text-base"></i>
+                <div class="timeline-node-ring"></div>
+              </div>
+            </div>
+            
+            <div class="w-5/12 pl-6 sm:pl-10"></div>
+          </div>
+
+          <!-- Milestone 4: 2021 -->
+          <div class="timeline-row relative flex items-center justify-between" data-milestone="4">
+            <div class="w-5/12 text-right pr-6 sm:pr-10"></div>
+            
+            <div class="timeline-node-wrapper shrink-0 z-20 flex items-center justify-center">
+              <div class="timeline-node timeline-tick" data-node-index="4">
+                <i class="bi bi-check-lg text-black font-black text-base"></i>
+                <div class="timeline-node-ring"></div>
+              </div>
+            </div>
+            
+            <div class="w-5/12 pl-6 sm:pl-10 text-left timeline-content-right">
+              <span class="text-xs font-mono font-bold text-gold-400 block mb-1">2021</span>
+              <h4 class="text-lg sm:text-xl font-bold text-white mb-1.5 transition-colors duration-300">Proprietary Virtual Data Room (VDR)</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Rolled out bank-grade digital data rooms with document watermarking, logging, and automated NDA workflows.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 5: 2026 -->
+          <div class="timeline-row relative flex items-center justify-between" data-milestone="5">
+            <div class="w-5/12 text-right pr-6 sm:pr-10 timeline-content-left">
+              <span class="text-xs font-mono font-bold text-gold-400 block mb-1">2026</span>
+              <h4 class="text-lg sm:text-xl font-bold text-white mb-1.5 transition-colors duration-300">$420M+ Lifetime Transacted Volume</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">850+ successful business sales, 12,500+ vetted buyers, and industry-leading 94.2% close rate.</p>
+            </div>
+            
+            <div class="timeline-node-wrapper shrink-0 z-20 flex items-center justify-center">
+              <div class="timeline-node timeline-star" data-node-index="5">
+                <i class="bi bi-star-fill text-black text-sm"></i>
+                <div class="timeline-node-ring"></div>
+              </div>
+            </div>
+            
+            <div class="w-5/12 pl-6 sm:pl-10"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SENIOR INTERMEDIARIES & LEADERSHIP TEAM
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14] border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Executive Leadership</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Our Senior Managing Partners</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-xl mx-auto">
+          Every client works directly with a credentialed partner who has successfully negotiated and closed multi-million dollar transactions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+        
+        <!-- Partner 1 -->
+        <div class="rounded-2xl bg-[#0D1527] border border-white/10 overflow-hidden text-center p-6 hover:border-[#C79718]/40 transition-all h-full flex flex-col justify-between">
+          <div class="flex flex-col items-center flex-1">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Alexander Vance" class="w-28 h-28 rounded-full mx-auto object-cover border-2 border-[#C79718]/40 shadow-xl mb-4 shrink-0">
+            <div class="min-h-[4.75rem] flex flex-col justify-center mb-3 w-full">
+              <h3 class="text-lg font-bold text-white">Alexander Vance, CBI</h3>
+              <span class="text-xs text-[#C79718] font-semibold block mt-1">Founder & Managing Partner</span>
+              <span class="text-[11px] text-slate-400 block mt-0.5">J.D., Harvard Law • CBI Certified</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed min-h-[4.5rem] mb-4">
+              Over 22 years of lower middle-market M&A experience. Closed $220M+ in transactions across precision manufacturing, aerospace, and logistics.
+            </p>
+          </div>
+          <div class="pt-4 mt-auto w-full border-t border-white/5">
+            <button type="button" class="btn btn-outline btn-sm w-full btn-open-consultation-modal">
+              Contact Alexander <i class="bi bi-envelope"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Partner 2 -->
+        <div class="rounded-2xl bg-[#0D1527] border border-white/10 overflow-hidden text-center p-6 hover:border-[#C79718]/40 transition-all h-full flex flex-col justify-between">
+          <div class="flex flex-col items-center flex-1">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Elena Rostova" class="w-28 h-28 rounded-full mx-auto object-cover border-2 border-[#C79718]/40 shadow-xl mb-4 shrink-0">
+            <div class="min-h-[4.75rem] flex flex-col justify-center mb-3 w-full">
+              <h3 class="text-lg font-bold text-white">Elena Rostova, M&AMI</h3>
+              <span class="text-xs text-[#C79718] font-semibold block mt-1">Senior Partner, Healthcare & Tech</span>
+              <span class="text-[11px] text-slate-400 block mt-0.5">Master Intermediary • Former PE VP</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed min-h-[4.5rem] mb-4">
+              Specialist in high-EBITDA dental rollups, medical aesthetics, and SaaS recapitalizations. Authored leading industry papers on healthcare MSO multiples.
+            </p>
+          </div>
+          <div class="pt-4 mt-auto w-full border-t border-white/5">
+            <button type="button" class="btn btn-outline btn-sm w-full btn-open-consultation-modal">
+              Contact Elena <i class="bi bi-envelope"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Partner 3 -->
+        <div class="rounded-2xl bg-[#0D1527] border border-white/10 overflow-hidden text-center p-6 hover:border-[#C79718]/40 transition-all h-full flex flex-col justify-between">
+          <div class="flex flex-col items-center flex-1">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Marcus Sterling" class="w-28 h-28 rounded-full mx-auto object-cover border-2 border-[#C79718]/40 shadow-xl mb-4 shrink-0">
+            <div class="min-h-[4.75rem] flex flex-col justify-center mb-3 w-full">
+              <h3 class="text-lg font-bold text-white">Marcus Sterling</h3>
+              <span class="text-xs text-[#C79718] font-semibold block mt-1">Head of Franchise Advisory</span>
+              <span class="text-[11px] text-slate-400 block mt-0.5">IFA Member • 16 Yrs Franchise Strategy</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed min-h-[4.5rem] mb-4">
+              Has structured multi-unit expansions and divestitures for leading quick-service restaurant, fitness, and commercial service brands across North America.
+            </p>
+          </div>
+          <div class="pt-4 mt-auto w-full border-t border-white/5">
+            <button type="button" class="btn btn-outline btn-sm w-full btn-open-consultation-modal">
+              Contact Marcus <i class="bi bi-envelope"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Partner 4 -->
+        <div class="rounded-2xl bg-[#0D1527] border border-white/10 overflow-hidden text-center p-6 hover:border-[#C79718]/40 transition-all h-full flex flex-col justify-between">
+          <div class="flex flex-col items-center flex-1">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="David Chen" class="w-28 h-28 rounded-full mx-auto object-cover border-2 border-[#C79718]/40 shadow-xl mb-4 shrink-0">
+            <div class="min-h-[4.75rem] flex flex-col justify-center mb-3 w-full">
+              <h3 class="text-lg font-bold text-white">David Chen, CPA</h3>
+              <span class="text-xs text-[#C79718] font-semibold block mt-1">Head of Valuation & Forensic M&A</span>
+              <span class="text-[11px] text-slate-400 block mt-0.5">Certified Valuation Analyst (CVA)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed min-h-[4.5rem] mb-4">
+              Former Big 4 audit director. Leads financial recasting, working capital peg adjustments, tax-efficient deal structuring, and SBA underwriting.
+            </p>
+          </div>
+          <div class="pt-4 mt-auto w-full border-t border-white/5">
+            <button type="button" class="btn btn-outline btn-sm w-full btn-open-consultation-modal">
+              Contact David <i class="bi bi-envelope"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ACCREDITATIONS & PROFESSIONAL MEMBERSHIPS
+       ======================================================================== -->
+  <section class="py-16 bg-[#0D1527] border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-xs font-bold uppercase tracking-widest text-slate-400 block mb-3">Institutional Credentials</span>
+      <h3 class="text-xl font-bold text-white mb-8">Recognized by Leading North American M&A Associations</h3>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 items-stretch max-w-4xl mx-auto">
+        <div class="p-5 rounded-2xl bg-[#070B14] border border-white/10 text-center h-full flex flex-col justify-center hover:border-[#C79718]/40 transition-colors">
+          <span class="font-extrabold text-[#C79718] text-lg block font-display tracking-wider mb-1">IBBA</span>
+          <span class="text-xs text-slate-400">Intl Business Brokers Assoc</span>
+        </div>
+        <div class="p-5 rounded-2xl bg-[#070B14] border border-white/10 text-center h-full flex flex-col justify-center hover:border-[#C79718]/40 transition-colors">
+          <span class="font-extrabold text-[#C79718] text-lg block font-display tracking-wider mb-1">M&A SOURCE</span>
+          <span class="text-xs text-slate-400">Middle Market Intermediaries</span>
+        </div>
+        <div class="p-5 rounded-2xl bg-[#070B14] border border-white/10 text-center h-full flex flex-col justify-center hover:border-[#C79718]/40 transition-colors">
+          <span class="font-extrabold text-[#C79718] text-lg block font-display tracking-wider mb-1">IFA</span>
+          <span class="text-xs text-slate-400">Intl Franchise Association</span>
+        </div>
+        <div class="p-5 rounded-2xl bg-[#070B14] border border-white/10 text-center h-full flex flex-col justify-center hover:border-[#C79718]/40 transition-colors">
+          <span class="font-extrabold text-[#C79718] text-lg block font-display tracking-wider mb-1">NACVA</span>
+          <span class="text-xs text-slate-400">Certified Valuation Analysts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       NATIONWIDE ADVISORY OFFICES
+       ======================================================================== -->
+  <section class="py-20 bg-[#0D1527] border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Regional Coverage</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Our Advisory Desks Nationwide</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-xl mx-auto">
+          Local deal presence combined with national capital syndicate outreach.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 items-stretch">
+        
+        <div class="p-6 rounded-2xl bg-[#070B14] border border-white/10 hover:border-[#C79718]/40 transition-all text-start flex flex-col justify-between h-full group">
+          <div>
+            <span class="px-2.5 py-1 rounded-md bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 text-[10px] font-bold uppercase tracking-wider inline-block">Headquarters</span>
+            <h4 class="text-base font-bold text-white mt-3 mb-1">Austin, TX</h4>
+            <p class="text-xs text-slate-400 leading-relaxed min-h-[2.5rem]">555 Congress Ave, Suite 2100<br>Austin, TX 78701</p>
+          </div>
+          <span class="text-xs text-slate-300 font-mono block pt-3 border-t border-white/5 mt-4">+1 (800) 826-4827</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#070B14] border border-white/10 hover:border-[#C79718]/40 transition-all text-start flex flex-col justify-between h-full group">
+          <div>
+            <span class="px-2.5 py-1 rounded-md bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 text-[10px] font-bold uppercase tracking-wider inline-block">Northeast M&A</span>
+            <h4 class="text-base font-bold text-white mt-3 mb-1">New York, NY</h4>
+            <p class="text-xs text-slate-400 leading-relaxed min-h-[2.5rem]">140 Broadway, 36th Floor<br>New York, NY 10005</p>
+          </div>
+          <span class="text-xs text-slate-300 font-mono block pt-3 border-t border-white/5 mt-4">+1 (212) 840-2900</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#070B14] border border-white/10 hover:border-[#C79718]/40 transition-all text-start flex flex-col justify-between h-full group">
+          <div>
+            <span class="px-2.5 py-1 rounded-md bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 text-[10px] font-bold uppercase tracking-wider inline-block">Southeast & LatAm</span>
+            <h4 class="text-base font-bold text-white mt-3 mb-1">Miami, FL</h4>
+            <p class="text-xs text-slate-400 leading-relaxed min-h-[2.5rem]">801 Brickell Ave, 9th Floor<br>Miami, FL 33131</p>
+          </div>
+          <span class="text-xs text-slate-300 font-mono block pt-3 border-t border-white/5 mt-4">+1 (305) 720-4100</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#070B14] border border-white/10 hover:border-[#C79718]/40 transition-all text-start flex flex-col justify-between h-full group">
+          <div>
+            <span class="px-2.5 py-1 rounded-md bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 text-[10px] font-bold uppercase tracking-wider inline-block">North Texas & Logistics</span>
+            <h4 class="text-base font-bold text-white mt-3 mb-1">Dallas, TX</h4>
+            <p class="text-xs text-slate-400 leading-relaxed min-h-[2.5rem]">2001 Ross Ave, Suite 1900<br>Dallas, TX 75201</p>
+          </div>
+          <span class="text-xs text-slate-300 font-mono block pt-3 border-t border-white/5 mt-4">+1 (214) 930-5500</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#070B14] border border-white/10 hover:border-[#C79718]/40 transition-all text-start flex flex-col justify-between h-full group">
+          <div>
+            <span class="px-2.5 py-1 rounded-md bg-[#C79718]/15 text-[#C79718] border border-[#C79718]/30 text-[10px] font-bold uppercase tracking-wider inline-block">Midwest Industrial</span>
+            <h4 class="text-base font-bold text-white mt-3 mb-1">Chicago, IL</h4>
+            <p class="text-xs text-slate-400 leading-relaxed min-h-[2.5rem]">111 S Wacker Dr, Suite 3300<br>Chicago, IL 60606</p>
+          </div>
+          <span class="text-xs text-slate-300 font-mono block pt-3 border-t border-white/5 mt-4">+1 (312) 650-8800</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FINAL CALL TO ACTION
+       ======================================================================== -->
+  <section class="py-20 bg-[#070B14] border-t border-white/10 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <span class="inline-block px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+        Confidential Executive Advisory
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+        Connect Directly With a Managing Partner.
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Whether you are planning a strategic business exit, exploring franchise growth, or acquiring an established enterprise, our senior brokers are ready to provide discrete, certified guidance.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <button type="button" class="btn btn-primary btn-lg shadow-xl shadow-emerald-500/25 btn-open-consultation-modal">
+          Schedule Free Consultation <i class="bi bi-calendar-check"></i>
+        </button>
+        <a href="buy-a-business.html" class="btn btn-outline btn-lg">
+          Browse Active Deal Inventory <i class="bi bi-briefcase"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SITE FOOTER
+       ======================================================================== -->
+  <footer class="bg-black text-slate-300 text-sm border-t border-white/10 mt-auto site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-3 mb-4 group">
+            <div class="w-10 h-10 rounded-xl bg-[#C79718] flex items-center justify-center shadow-lg shadow-[#C79718]/30 group-hover:scale-105 transition-transform">
+              <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-white tracking-tight leading-tight">
+                VANGUARD <span class="text-[#C79718]">BROKERS</span>
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
+                Business Brokerage & M&A Advisory
+              </span>
+            </div>
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4 max-w-sm">
+            Institutional business brokerage and franchise consulting practice. Vetted listings, certified business valuations, and confidential deal execution nationwide.
+          </p>
+          <div class="mb-5">
+            <span class="badge-ibba-member">
+              <i class="bi bi-shield-check"></i>
+              <span>IBBA & M&A Source Member</span>
+            </span>
+          </div>
+          <div class="flex items-center gap-3 text-slate-400">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-icon-toggle w-9 h-9 text-slate-400 hover:text-emerald-400" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Navigation</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a></li>
+            <li><a href="buy-a-business.html" class="hover:text-emerald-400 transition-colors">Buy</a></li>
+            <li><a href="sell-your-business.html" class="hover:text-emerald-400 transition-colors">Sell</a></li>
+            <li><a href="about.html" class="hover:text-emerald-400 transition-colors text-emerald-400 font-semibold">About</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Advisory Desk (Replaces Top Sectors) -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Advisory Desk</h4>
+          <div class="space-y-3 text-xs leading-relaxed">
+            <p class="flex items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>555 Congress Ave, Suite 2100<br>Austin, TX 78701</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="bi bi-telephone-fill text-emerald-400 shrink-0"></i>
+              <span>+1 (800) 826-4827</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="bi bi-envelope-fill text-emerald-400 shrink-0"></i>
+              <span>advisory@vanguardbrokers.com</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Deal Flow Digest</h4>
+          <p class="text-xs text-slate-400 mb-3">
+            Subscribe for monthly off-market acquisitions and franchise releases.
+          </p>
+          <form class="newsletter-form space-y-2">
+            <input type="email" class="form-input text-xs py-2" placeholder="Your business email" required>
+            <button type="submit" class="btn btn-primary w-full btn-sm">
+              Subscribe <i class="bi bi-send"></i>
+            </button>
+          </form>
+          <p class="text-[11px] text-slate-500 mt-2">No spam. Unsubscribe anytime.</p>
+        </div>
+
+      </div>
+
+      <!-- Legal Bottom Bar -->
+      <div class="pt-12 mt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; 2026 Vanguard Business Brokers & M&A Advisory LLC All rights reserved
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="privacy-policy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-slate-300 transition-colors">Terms of Representation</a>
+          <a href="contact.html" class="hover:text-slate-300 transition-colors">Regulatory Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL 1: BOOK A FREE CONSULTATION
+       ======================================================================== -->
+  <div id="modal-consultation" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-lg">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div>
+          <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block mb-0.5">Confidential Session</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Book a Free Consultation</h3>
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-xl p-1" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <form id="consultation-form" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Full Name <span class="text-rose-500">*</span>
+            </label>
+            <input type="text" id="consult-name" data-type="name" pattern="^[A-Za-z\s'.-]{2,}$" title="Full legal name (letters only, no numbers)" required class="form-input text-sm" placeholder="Johnathan Doe">
+          </div>
+          <div>
+            <label for="consult-email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Work Email <span class="text-rose-500">*</span>
+            </label>
+            <input type="email" id="consult-email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Valid email address (e.g. name@company.com)" required class="form-input text-sm" placeholder="john@company.com">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-phone" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Phone Number <span class="text-rose-500">*</span>
+            </label>
+            <input type="tel" id="consult-phone" pattern="[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]{6,15}" title="Valid phone number (digits only)" required class="form-input text-sm" placeholder="+1 (555) 019-2834">
+          </div>
+          <div>
+            <label for="consult-topic" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Topic of Consultation <span class="text-rose-500">*</span>
+            </label>
+            <select id="consult-topic" required class="form-select text-sm">
+              <option value="selling">Selling My Business (Valuation & Exit)</option>
+              <option value="buying">Acquiring an Existing Business</option>
+              <option value="franchise">Franchise Expansion Advisory</option>
+              <option value="valuation">Certified Independent Valuation</option>
+              <option value="other">General Strategic Inquiry</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="consult-date" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Preferred Date <span class="text-rose-500">*</span>
+            </label>
+            <input type="date" id="consult-date" required class="form-input text-sm">
+          </div>
+          <div>
+            <label for="consult-time" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              Preferred Time Slot <span class="text-rose-500">*</span>
+            </label>
+            <select id="consult-time" required class="form-select text-sm">
+              <option value="09:00">09:00 AM - 10:00 AM EST</option>
+              <option value="11:00">11:00 AM - 12:00 PM EST</option>
+              <option value="14:00">02:00 PM - 03:00 PM EST</option>
+              <option value="16:00">04:00 PM - 05:00 PM EST</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="consult-advisor" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+            Advisor Preference (Optional)
+          </label>
+          <select id="consult-advisor" class="form-select text-sm">
+            <option value="first-available">First Available Senior Broker</option>
+            <option value="alexander">Alexander Vance (M&A Managing Partner)</option>
+            <option value="elena">Elena Rostova (Healthcare & Tech M&A)</option>
+            <option value="marcus">Marcus Sterling (Franchise Advisory)</option>
+            <option value="david">David Chen (Head of Valuation)</option>
+          </select>
+        </div>
+
+        <p class="text-[11px] text-slate-400 text-center pt-2">
+          All consultations are held under strict confidential attorney-broker privilege. No public records are created.
+        </p>
+
+        <button type="submit" class="btn btn-primary w-full mt-2">
+          Confirm Consultation <i class="bi bi-calendar-check"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: SAVED BUSINESSES DRAWER
+       ======================================================================== -->
+  <div id="modal-saved-listings" class="modal-backdrop">
+    <div class="modal-dialog p-6 sm:p-8 max-w-lg">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+        <div class="flex items-center gap-2">
+          <i class="bi bi-heart-fill text-rose-500 text-lg"></i>
+          <h3 class="text-xl font-bold text-white tracking-tight">Saved Businesses</h3>
+        </div>
+        <button type="button" class="btn-close-modal text-slate-400 hover:text-white text-xl p-1" aria-label="Close modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div id="saved-listings-container" class="space-y-4 max-h-[60vh] overflow-y-auto pr-1">
+        <!-- Rendered dynamically by listings.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" class="back-to-top" aria-label="Back to top of page">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Core JavaScript Libraries -->
+  <script src="assets/js/listings.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+/**
+ * VANGUARD BUSINESS BROKERS & FRANCHISE ADVISORS
+ * RTL Overrides, Mirroring & BiDi Punctuation Normalization
+ */
+
+[dir="rtl"], html.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ========================================================================
+   RTL PUNCTUATION, SYMBOLS & MANDATORY ASTERISKS NORMALIZATION
+   Fixes Unicode BiDi reordering so fullstops (.), colons (:), commas (,),
+   mandatory asterisks (*), hashtags (#), stars (★), plus (+), and symbols
+   appear at the natural right end of phrases, sentences, and labels in RTL.
+   ======================================================================== */
+
+/* Enforce LTR character stream with right-alignment across all text elements */
+[dir="rtl"] p,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] label,
+[dir="rtl"] .form-label,
+[dir="rtl"] li,
+[dir="rtl"] dt,
+[dir="rtl"] dd,
+[dir="rtl"] td,
+[dir="rtl"] th,
+[dir="rtl"] blockquote,
+[dir="rtl"] figcaption,
+[dir="rtl"] a,
+[dir="rtl"] span:not([class*="bi-"]):not([class*="fa-"]):not(.saved-counter-badge),
+[dir="rtl"] .hero-badge,
+[dir="rtl"] .filter-chip,
+[dir="rtl"] .price-tag,
+[dir="rtl"] .financial-figure,
+[dir="rtl"] .badge,
+html.rtl p,
+html.rtl h1,
+html.rtl h2,
+html.rtl h3,
+html.rtl h4,
+html.rtl h5,
+html.rtl h6,
+html.rtl label,
+html.rtl .form-label,
+html.rtl li,
+html.rtl dt,
+html.rtl dd,
+html.rtl td,
+html.rtl th,
+html.rtl blockquote,
+html.rtl figcaption,
+html.rtl a,
+html.rtl span:not([class*="bi-"]):not([class*="fa-"]):not(.saved-counter-badge),
+html.rtl .hero-badge,
+html.rtl .filter-chip,
+html.rtl .price-tag,
+html.rtl .financial-figure,
+html.rtl .badge {
+  direction: ltr !important;
+  text-align: right;
+  unicode-bidi: isolate !important;
+}
+
+/* Ensure labels display block/inline-block so asterisk span is placed at right end */
+[dir="rtl"] label,
+html.rtl label {
+  display: block;
+  direction: ltr !important;
+  text-align: right !important;
+  unicode-bidi: isolate !important;
+}
+
+/* Mandatory asterisks and red indicators in labels */
+[dir="rtl"] label span.text-rose-500,
+[dir="rtl"] label span.text-red-500,
+[dir="rtl"] .mandatory-star,
+html.rtl label span.text-rose-500,
+html.rtl label span.text-red-500,
+html.rtl .mandatory-star {
+  direction: ltr !important;
+  display: inline-block;
+  margin-inline-start: 3px;
+  unicode-bidi: isolate !important;
+}
+
+/* Form input controls, selects, options, and textareas */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select,
+[dir="rtl"] option,
+[dir="rtl"] .form-input,
+[dir="rtl"] .form-select,
+html.rtl input,
+html.rtl textarea,
+html.rtl select,
+html.rtl option,
+html.rtl .form-input,
+html.rtl .form-select {
+  direction: ltr !important;
+  text-align: right !important;
+  unicode-bidi: isolate !important;
+}
+
+[dir="rtl"] input::placeholder,
+[dir="rtl"] textarea::placeholder,
+html.rtl input::placeholder,
+html.rtl textarea::placeholder {
+  direction: ltr !important;
+  text-align: right !important;
+}
+
+/* Protect Brand Logo from reversing letters or words */
+[dir="rtl"] .site-header a.group,
+[dir="rtl"] .site-header a.group *,
+html.rtl .site-header a.group,
+html.rtl .site-header a.group * {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+}
+
+/* Stat counters & tabular numbers (850+, $420M+, 12,500+) */
+[dir="rtl"] .stat-counter,
+[dir="rtl"] .num-tabular,
+html.rtl .stat-counter,
+html.rtl .num-tabular {
+  direction: ltr !important;
+  display: inline-block;
+  unicode-bidi: isolate !important;
+  text-align: center !important;
+}
+
+/* Centered layout elements remain centered */
+[dir="rtl"] .text-center,
+[dir="rtl"] .text-center *,
+[dir="rtl"] .page-hero-content,
+[dir="rtl"] .page-hero-content *,
+html.rtl .text-center,
+html.rtl .text-center *,
+html.rtl .page-hero-content,
+html.rtl .page-hero-content * {
+  text-align: center !important;
+}
+
+/* Elements explicitly styled with text-start or text-left align right in RTL */
+[dir="rtl"] .text-start,
+[dir="rtl"] .text-start *,
+[dir="rtl"] .text-left,
+[dir="rtl"] .text-left *,
+html.rtl .text-start,
+html.rtl .text-start *,
+html.rtl .text-left,
+html.rtl .text-left * {
+  text-align: right !important;
+}
+
+/* Right-aligned text overrides */
+[dir="rtl"] .text-right,
+html.rtl .text-right {
+  text-align: left !important;
+}
+
+/* Interactive button containers */
+[dir="rtl"] .btn,
+html.rtl .btn {
+  direction: ltr !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  unicode-bidi: isolate !important;
+}
+
+/* Directional Icon Flipping */
+[dir="rtl"] .bi-arrow-right,
+[dir="rtl"] .bi-arrow-left,
+[dir="rtl"] .bi-chevron-right,
+[dir="rtl"] .bi-chevron-left,
+[dir="rtl"] .fa-arrow-right,
+[dir="rtl"] .fa-arrow-left,
+[dir="rtl"] .fa-chevron-right,
+[dir="rtl"] .fa-chevron-left {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .toast-success {
+  border-inline-start: 4px solid var(--accent-primary);
+  border-inline-end: none;
+}
+
+[dir="rtl"] .back-to-top {
+  inset-inline-start: auto;
+  inset-inline-end: 2rem;
+}
+
+[dir="rtl"] .accordion-header i {
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+}
+
+/* ========================================================================
+   RTL MOBILE DRAWER SPECIFICATIONS
+   ======================================================================== */
+[dir="rtl"] #mobile-nav-drawer,
+html.rtl #mobile-nav-drawer {
+  left: auto !important;
+  right: 0 !important;
+  border-right: none !important;
+  border-left: 1px solid var(--border-card) !important;
+  transform: translateX(100%) !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+[dir="rtl"] #mobile-nav-drawer.open,
+[dir="rtl"] #mobile-nav-drawer.active,
+html.rtl #mobile-nav-drawer.open,
+html.rtl #mobile-nav-drawer.active {
+  transform: translateX(0) !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+@media (min-width: 1024px) {
+  [dir="rtl"] #mobile-nav-drawer,
+  html.rtl #mobile-nav-drawer,
+  [dir="rtl"] #mobile-nav-backdrop,
+  html.rtl #mobile-nav-backdrop {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateX(100%) !important;
+  }
+}
+
+/* ========================================================================
+   RTL NAVIGATION DROPDOWN CHEVRON POSITION
+   Requirement: The dropdown symbol has to come at the right of Home even in RTL
+   ======================================================================== */
+[dir="rtl"] .nav-dropdown-trigger,
+html.rtl .nav-dropdown-trigger {
+  direction: ltr !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+}
+
+[dir="rtl"] .nav-dropdown-trigger .nav-link-text,
+html.rtl .nav-dropdown-trigger .nav-link-text {
+  order: 1 !important;
+}
+
+[dir="rtl"] .nav-dropdown-trigger .dropdown-chevron,
+html.rtl .nav-dropdown-trigger .dropdown-chevron {
+  order: 2 !important;
+}
+
+/* ========================================================================
+   RTL FOOTER LAYOUT & ALIGNMENT
+   ======================================================================== */
+[dir="rtl"] footer,
+html.rtl footer {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] footer h4,
+[dir="rtl"] footer p,
+[dir="rtl"] footer ul,
+[dir="rtl"] footer li,
+[dir="rtl"] footer a,
+[dir="rtl"] footer span,
+html.rtl footer h4,
+html.rtl footer p,
+html.rtl footer ul,
+html.rtl footer li,
+html.rtl footer a,
+html.rtl footer span {
+  text-align: right !important;
+}
+
+[dir="rtl"] footer a.group,
+html.rtl footer a.group {
+  direction: rtl !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+[dir="rtl"] footer .flex.items-center.gap-3,
+html.rtl footer .flex.items-center.gap-3 {
+  justify-content: flex-start !important;
+}
+
+/* ========================================================================
+   RTL FOOTER ADVISORY DESK ALIGNMENT
+   ======================================================================== */
+[dir="rtl"] footer .space-y-3,
+html.rtl footer .space-y-3 {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] footer .space-y-3 p,
+html.rtl footer .space-y-3 p {
+  direction: rtl !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  text-align: right !important;
+  gap: 0.625rem !important;
+  margin-inline-start: 0 !important;
+}
+
+[dir="rtl"] footer .space-y-3 p i,
+html.rtl footer .space-y-3 p i {
+  margin-top: 0.15rem !important;
+  flex-shrink: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+[dir="rtl"] footer .space-y-3 p span,
+html.rtl footer .space-y-3 p span,
+[dir="rtl"] footer .space-y-3 p a,
+html.rtl footer .space-y-3 p a {
+  direction: ltr !important;
+  text-align: right !important;
+  display: inline-block !important;
+  unicode-bidi: isolate !important;
+  flex-shrink: 1 !important;
+}
+
+[dir="rtl"] footer .newsletter-form input,
+html.rtl footer .newsletter-form input {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] footer .newsletter-form button,
+html.rtl footer .newsletter-form button {
+  direction: rtl !important;
+  justify-content: center !important;
+}
+
+[dir="rtl"] footer .border-t.border-white\/10,
+html.rtl footer .border-t.border-white\/10 {
+  direction: rtl !important;
+}
+
+/* Save / Favorite heart button RTL alignment */
+[dir="rtl"] .btn-save-listing,
+html.rtl .btn-save-listing {
+  left: auto !important;
+  right: 1rem !important;
+  inset-inline-start: 1rem !important;
+  inset-inline-end: auto !important;
+}
+
+/* Listing Search Bar RTL Alignment */
+[dir="rtl"] .listing-search-wrapper .listing-search-icon,
+html.rtl .listing-search-wrapper .listing-search-icon {
+  left: auto !important;
+  right: 1.125rem !important;
+}
+
+[dir="rtl"] .listing-search-input,
+html.rtl .listing-search-input {
+  direction: ltr !important;
+  text-align: right !important;
+  padding-right: 3.125rem !important;
+  padding-left: 1.25rem !important;
+}
+
+[dir="rtl"] .listing-search-input::placeholder,
+html.rtl .listing-search-input::placeholder {
+  direction: ltr !important;
+  text-align: right !important;
+}
+
+/* Stepper Progress Track & Transitions RTL */
+[dir="rtl"] .stepper-track-fill,
+html.rtl .stepper-track-fill {
+  background: linear-gradient(270deg, #DFBA63, #C5A059);
+}
+
+[dir="rtl"] .seller-step-content.step-animate-forward,
+html.rtl .seller-step-content.step-animate-forward {
+  animation-name: stepSlideForwardRTL;
+}
+
+[dir="rtl"] .seller-step-content.step-animate-backward,
+html.rtl .seller-step-content.step-animate-backward {
+  animation-name: stepSlideBackwardRTL;
+}
+
+@keyframes stepSlideForwardRTL {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes stepSlideBackwardRTL {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
