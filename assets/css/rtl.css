@@ -117,6 +117,10 @@ html.rtl textarea::placeholder {
 
 /* Protect Brand Logo from reversing letters or words */
 [dir="rtl"] .site-header a.group,
+[dir="rtl"] #mobile-nav-drawer a.group,
+[dir="rtl"] footer a.group,
+[dir="rtl"] .brand-logo,
+[dir="rtl"] .brand-logo *,
 [dir="rtl"] .site-header a.group *,
 html.rtl .site-header a.group,
 html.rtl .site-header a.group * {

@@ -89,11 +89,11 @@
           </svg>
         </div>
         <div class="flex flex-col">
-          <span class="text-lg font-extrabold tracking-tight text-white flex items-center gap-1 leading-tight">
-            VANGUARD <span class="text-[#C79718]">BROKERS</span>
+          <span class="brand-title-top text-base sm:text-lg font-extrabold tracking-wider text-white uppercase leading-tight">
+            VANGUARD
           </span>
-          <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
-            Business Brokerage & M&A Advisory
+          <span class="brand-title-sub text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.24em] text-[#C79718] leading-tight">
+            BROKERS
           </span>
         </div>
       </a>
@@ -129,11 +129,11 @@
           <span class="saved-counter-badge absolute -top-1.5 -inset-inline-end-1.5 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-bold flex items-center justify-center hidden">0</span>
         </button>
 
-        <button type="button" class="btn-icon-toggle theme-toggle-btn hidden lg:inline-flex" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+        <button type="button" class="btn-icon-toggle theme-toggle-btn inline-flex" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
           <i class="bi bi-moon-stars-fill text-amber-500"></i>
         </button>
 
-        <button type="button" class="btn-icon-toggle rtl-toggle-btn hidden lg:inline-flex" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
+        <button type="button" class="btn-icon-toggle rtl-toggle-btn inline-flex" title="Toggle RTL/LTR Layout" aria-label="Toggle layout direction">
           <i class="bi bi-arrow-left-right text-base"></i>
         </button>
 
@@ -161,8 +161,8 @@
             </svg>
           </div>
           <div class="flex flex-col">
-            <span class="text-base font-extrabold text-white tracking-tight leading-tight">VANGUARD <span class="text-[#C79718]">BROKERS</span></span>
-            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">Business Brokerage & M&A Advisory</span>
+            <span class="brand-title-top text-base sm:text-lg font-extrabold tracking-wider text-white uppercase leading-tight">VANGUARD</span>
+            <span class="brand-title-sub text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.24em] text-[#C79718] leading-tight">BROKERS</span>
           </div>
         </a>
         <button type="button" id="btn-close-mobile-menu" class="text-slate-400 hover:text-white text-2xl p-1" aria-label="Close menu">
@@ -204,7 +204,13 @@
       <button type="button" class="btn btn-primary w-full btn-open-consultation-modal">
         Book Free Consultation <i class="bi bi-calendar-event"></i>
       </button>
-      <div class="flex items-center justify-around pt-2">
+      <div class="pt-1">
+        <button type="button" class="btn btn-outline w-full btn-open-saved-modal flex items-center justify-center gap-2" title="Saved Businesses">
+          <i class="bi bi-heart"></i>
+          <span>Saved Businesses (<span class="saved-counter-badge inline-block">0</span>)</span>
+        </button>
+      </div>
+      <div style="display:none">
         <button type="button" class="btn-icon-toggle theme-toggle-btn" title="Toggle Theme">
           <i class="bi bi-moon-stars-fill text-amber-500"></i>
         </button>
@@ -546,11 +552,11 @@
               </svg>
             </div>
             <div class="flex flex-col">
-              <span class="text-lg font-bold text-white tracking-tight leading-tight">
-                VANGUARD <span class="text-[#C79718]">BROKERS</span>
+              <span class="brand-title-top text-base sm:text-lg font-extrabold tracking-wider text-white uppercase leading-tight">
+                VANGUARD
               </span>
-              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 leading-none">
-                Business Brokerage & M&A Advisory
+              <span class="brand-title-sub text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.24em] text-[#C79718] leading-tight">
+                BROKERS
               </span>
             </div>
           </a>
@@ -628,7 +634,7 @@
 
       <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
         <div>
-          &copy; 2026 <span class="text-white font-bold">Vanguard Business Brokers & M&A Advisory</span> All rights reserved
+          &copy; 2026 <span class="text-white font-bold">Vanguard Brokers</span>. All rights reserved.
         </div>
         <div class="flex items-center gap-6">
           <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>

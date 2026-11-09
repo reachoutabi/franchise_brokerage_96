@@ -228,6 +228,62 @@ html.light-mode .nav-link:hover, html.light-mode .nav-link.active {
 }
 
 /* ========================================================================
+/* ========================================================================
+   BRAND LOGO STYLES: VANGUARD (TOP BIG) & BROKERS (BOTTOM SMALL)
+   ======================================================================== */
+.brand-title-top {
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  line-height: 1.15;
+  display: block;
+}
+
+html.light-mode .site-header .brand-title-top,
+html.light-mode #mobile-nav-drawer .brand-title-top {
+  color: #0F172A !important;
+}
+
+.brand-title-sub {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: #C79718 !important;
+  line-height: 1.1;
+  display: block;
+  margin-top: 1px;
+}
+
+footer .brand-title-top,
+.site-footer .brand-title-top,
+html.light-mode footer .brand-title-top,
+html.light-mode .site-footer .brand-title-top {
+  color: #FFFFFF !important;
+}
+
+@media (max-width: 480px) {
+  .brand-title-top {
+    font-size: 0.95rem !important;
+    line-height: 1.15 !important;
+  }
+  .brand-title-sub {
+    font-size: 0.625rem !important;
+    letter-spacing: 0.22em !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-title-top {
+    font-size: 0.875rem !important;
+  }
+  .brand-title-sub {
+    font-size: 0.5625rem !important;
+    letter-spacing: 0.20em !important;
+  }
+}
+
+/* ========================================================================
    HOME DROPDOWN COMPONENT (Section 15.2)
    ======================================================================== */
 .nav-dropdown-wrapper {
@@ -1285,6 +1341,12 @@ html.rtl #mobile-nav-drawer.active {
     visibility: hidden !important;
     pointer-events: none !important;
   }
+  .site-header .theme-toggle-btn,
+  .site-header .rtl-toggle-btn {
+    display: inline-flex !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
 
   .desktop-nav {
     display: flex !important;
@@ -1299,7 +1361,13 @@ html.rtl #mobile-nav-drawer.active {
     display: none !important;
     visibility: hidden !important;
     pointer-events: none !important;
-    transform: translateX(-100%) !important;
+  }
+  .site-header .theme-toggle-btn,
+  .site-header .rtl-toggle-btn {
+    display: inline-flex !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
   }
 
   [dir="rtl"] #mobile-nav-drawer,
@@ -1315,6 +1383,12 @@ html.rtl #mobile-nav-drawer.active {
     visibility: hidden !important;
     pointer-events: none !important;
   }
+  .site-header .theme-toggle-btn,
+  .site-header .rtl-toggle-btn {
+    display: inline-flex !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
 
   .hamburger-btn,
   #btn-mobile-menu-toggle {
@@ -1327,14 +1401,20 @@ html.rtl #mobile-nav-drawer.active {
     display: flex !important;
   }
 
-  /* Once hamburger appears, hide header action buttons because they are in the mobile drawer */
+  /* Once hamburger appears, hide desktop-only CTA & saved modal; theme & RTL toggles remain in the top navbar */
   .site-header .btn-open-saved-modal,
-  .site-header .theme-toggle-btn,
-  .site-header .rtl-toggle-btn,
+
+
   .site-header .btn-open-consultation-modal {
     display: none !important;
     visibility: hidden !important;
     pointer-events: none !important;
+  }
+  .site-header .theme-toggle-btn,
+  .site-header .rtl-toggle-btn {
+    display: inline-flex !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
   }
 }
 
